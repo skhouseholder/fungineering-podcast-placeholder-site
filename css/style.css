@@ -119,6 +119,7 @@ body {
 
 body {
 	color: #dadada;
+	background-color: #303F9F;
 	line-height: 1.75;
 	margin: 0;
 }
@@ -344,7 +345,7 @@ textarea:focus {
 
 button,
 input[type="submit"] {
-	background: #10A79C;
+	background: #FF9800;
 	-webkit-transition:	all 0.3s;
 	-moz-transition:	all 0.3s;
 	transition:			all 0.3s;
@@ -354,8 +355,8 @@ button:hover,
 button:focus,
 input[type="submit"]:focus,
 input[type="submit"]:hover {
-	background: #12BAAD;
-	color: #dadada;
+	background: #FFA726;
+	/*color: #dadada;*/
 	outline: 0;
 }
 
