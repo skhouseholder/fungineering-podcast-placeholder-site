@@ -1,0 +1,810 @@
+/*
+	Template: Timeline
+	Author: Linewp
+	Version: 1.0
+*/
+
+
+/* TABLE OF CONTENTS
+
+	1. CSS Reset
+	2. Basic Document Styles
+	3. Common Styles
+	4. Typography
+	5. Forms
+	6. Social Icons
+	7. Preloader
+	8. Background Overlay
+	9. Video Background
+	10. Countdown
+	11. Newsletter
+	12. Modal toggle
+	13. Team
+	14. Responsive
+
+*/
+
+
+/* 1. CSS Reset
+-------------------------------------------------*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+	display: block;
+}
+
+audio,
+canvas,
+video {
+	display: inline-block;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+[hidden] {
+	display: none;
+}
+
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+}
+
+ul {
+	list-style: none;
+}
+
+ol {
+	list-style: decimal;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+
+img {
+	border: 0;
+	vertical-align: middle;
+	-ms-interpolation-mode: bicubic;
+}
+
+form {
+	margin: 0;
+}
+
+button,
+input {
+	line-height: normal;
+}
+
+button,
+input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+textarea {
+	overflow: auto;
+	vertical-align: top;
+}
+
+/* 2. Basic Document Styles
+-------------------------------------------------*/
+html,
+body {
+	height: 100%;
+}
+
+body {
+	color: #dadada;
+	line-height: 1.75;
+	margin: 0;
+}
+
+html,
+button,
+input,
+textarea {
+	font-family: 'Open Sans', sans-serif;
+}
+
+button,
+input,
+textarea {
+	border-radius: 2px;
+	font-size: 14px;
+	margin: 0;
+	max-width: 100%;
+	vertical-align: baseline;
+	-webkit-box-sizing:	border-box;
+	-moz-box-sizing:	border-box;
+	box-sizing:			border-box;
+}
+
+ul,
+ol {
+	margin: 0 0 28px;
+	padding: 0px;
+}
+
+a {
+	color: #dadada;
+	text-decoration: underline;
+}
+
+a:active,
+a:focus,
+a:hover {
+	outline: 0;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* 3. Common Styles
+-------------------------------------------------*/
+.wrap {
+	min-height: 100%;
+	position: relative;
+}
+
+.inner {
+	margin: 0 auto;
+	padding: 42px 24px;
+}
+
+#main {
+	position: relative;
+}
+
+#main .inner {
+	max-width: 816px;
+	padding-bottom: 126px;
+	padding-top: 84px;
+}
+
+#modal {
+	background: #1f1f1f;
+	background: rgba(31,31,31,0.8);
+	display: none;
+	left: 0;
+	min-height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 997;
+}
+
+#modal .inner {
+	max-width: 712px;
+}
+
+.row:after { 
+	clear: both; 
+}
+
+.row:before,.row:after { 
+	content: ""; 
+	display: table; 
+}
+
+.row {
+	margin-left: -48px;
+}
+
+.one-half,
+.one-third,
+.two-thirds {
+	-webkit-box-sizing:	border-box;
+	-moz-box-sizing:	border-box;
+	box-sizing:			border-box;
+	float: left;
+}
+
+.one-half {
+	width: 50%;
+	padding-left: 48px;
+}
+
+.one-third {
+	width: 39%;
+	padding-left: 15px;
+}
+
+.two-thirds {
+	width: 61%;
+	padding-left: 18px;
+}
+
+.content img {
+	height: auto;
+	max-width: 100%;
+}
+
+.no-js #timer,
+.no-js .modal-toggle,
+.no-js #preload {
+	display: none;
+}
+
+/* 4. Typography
+-------------------------------------------------*/
+h1,
+h2,
+h3,
+h4 {
+	color: #fff;
+	font-family: 'Roboto Slab', sans-serif;
+	font-weight: 400;
+	line-height: 1.16667;
+	margin: 0 0 50px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 44px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+i,
+em {
+	font-style: italic;
+}
+
+p {
+	margin: 0 0 28px;
+}
+
+.subtitle {
+	font-size: 14px;
+	letter-spacing: 1px;
+	margin: 32px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.row h2 {
+	font-size: 24px;
+	margin-bottom: 12px;
+	text-align: left;
+}
+
+.site-title {
+	font-size: 40px;
+	margin-bottom: 70px;
+}
+
+.screen-reader-text {
+	border: 0 none;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+}
+
+/* 5. Forms
+-------------------------------------------------*/
+input,
+textarea {
+	background: #6e6e6e;
+	background: rgba(169,169,169,0.3);
+	border: 0px;
+	color: #fff;
+	font-weight: 700;
+	letter-spacing: 1px;
+	padding: 12px;
+	text-transform: uppercase;
+}
+
+input:focus,
+textarea:focus {
+	outline: 0;
+}
+
+button,
+input[type="submit"] {
+	background: #10A79C;
+	-webkit-transition:	all 0.3s;
+	-moz-transition:	all 0.3s;
+	transition:			all 0.3s;
+}
+
+button:hover,
+button:focus,
+input[type="submit"]:focus,
+input[type="submit"]:hover {
+	background: #12BAAD;
+	color: #dadada;
+	outline: 0;
+}
+
+.form-field {
+	position: relative;
+}
+
+.form-field label {
+	font-size: 14px;
+}
+
+.form-field span.error {
+	background: #12BAAD;
+	border: 1px solid #12BAAD;
+	color: #f7f7f7;
+	font-size: 10px;
+	letter-spacing: 1px;
+	padding: 6px;
+	position: absolute;
+	right: 6px;	
+	text-transform: uppercase;
+	top: -14px;
+}
+
+.form-wrap .loading {
+	height: 42px;
+	margin: 0 auto 28px;
+	text-align: center;
+}
+
+.form-wrap .success {
+	color: #dadada;
+	font-family: 'Open Sans', sans-serif;
+	min-height: 42px;
+	text-align: center;
+}
+
+::-webkit-input-placeholder {
+	color: #a9a9a9;
+}
+
+::-moz-placeholder {
+	color: #a9a9a9;
+	opacity: 1;
+}
+
+.placeholder {
+	color: #a9a9a9;
+}
+
+/* 6. Social Icons
+-------------------------------------------------*/
+.social {
+	margin: 32px 0 45px;
+}
+
+.social ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.social li {
+	display: inline-block;
+	margin: 1px;
+}
+
+.social .icon {
+	color: rgba(255, 255, 255, 0.6);
+	display: inline-block;
+	font-size: 19px;
+	height: 36px;
+	line-height: 1.9;
+	text-align: center;
+	text-decoration: none;
+	width: 36px;
+	margin-right: 6px;
+	-webkit-transition:	all 0.3s ease;
+	-moz-transition:	all 0.3s ease;
+	transition:			all 0.3s ease;
+}
+
+.social .icon:hover {
+	color: #12BAAD;
+}
+
+.row li .fa {
+	font-size: 18px;
+	line-height: 1.6;
+	margin: 0 10px 14px 0;
+}
+
+/* 7. Preloader
+-------------------------------------------------*/
+#preload {
+	background: #1f1f1f url(../images/overlay.png) repeat;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;	
+	width: 100%;
+	z-index: 998;
+}
+
+#preload-content {
+	height: 100px;
+	left: 50%;
+	margin-left: -50px;
+	margin-top: -50px;
+	position: absolute;
+	top: 50%;
+	width: 100px;
+	z-index: 999;
+}
+
+.preload-text {
+	color: #949292;
+	font-family: 'Roboto Slab', sans-serif;
+	font-size: 14px;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.preload-spinner {
+	margin: 0 auto 14px;
+	text-align: center;
+}
+
+.bounce1,
+.bounce2,
+.bounce3 {
+	-webkit-animation-name: bounce;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-name: bounce;
+	-moz-animation-duration: 1.5s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-fill-mode: both;
+	animation-name: bounce;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+	background: #12BAAD;
+	display: inline-block;
+	height: 16px;
+	margin: 0 3px;
+	opacity: 0.6;
+	width: 18px;
+	border-radius: 8px;
+}
+
+.bounce1 {
+	-webkit-animation-delay: -0.32s;
+	-moz-animation-delay: -0.32s;
+	animation-delay: -0.32s;
+}
+
+.bounce2 {
+	-webkit-animation-delay: -0.16s;
+	-moz-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+}
+
+@-webkit-keyframes bounce {
+	0%, 80%, 100% { -webkit-transform: scale(0.0) }
+	40% { -webkit-transform: scale(1.0) }
+}
+@-moz-keyframes bounce {
+	0%, 80%, 100% { -moz-transform: scale(0.0) }
+	40% { -moz-transform: scale(1.0) }
+}
+@keyframes bounce {
+	0%, 80%, 100% { transform: scale(0.0) }
+	40% { transform: scale(1.0) }
+}
+
+/* 8. Background Overlay
+-------------------------------------------------*/
+.bg-overlay {
+	background: rgba(0,0,0,0.6) url(../images/overlay.png) repeat;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* 9. Video Background
+-------------------------------------------------*/
+#bg-video-controls {
+	bottom: 0;
+	height: 36px;
+	padding: 4px;
+	position: fixed;
+	right: 0;
+	text-align: center;
+	width: 75px;
+	z-index: 3;
+}
+
+#bg-video-controls a {
+	display: block;
+	float: left;
+	margin: 0 10px;
+	text-decoration: none;
+	opacity: 0.7;
+}
+
+#bg-video-controls a:hover {
+	opacity: 1;
+}
+
+/* 10. Countdown
+-------------------------------------------------*/
+.countdown-row {
+	display: block;
+	text-align: center;
+}
+
+.countdown-section {
+	border-left: 1px dotted #dadada;
+	border-color: rgba(218,218,218,0.8);
+	color: #dadada;
+	display: inline-block;
+	font-size: 12px;
+	letter-spacing: 1px;
+	padding: 42px 12px 28px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 25%;
+	-webkit-box-sizing:	border-box;
+	-moz-box-sizing:	border-box;
+	box-sizing:			border-box;
+}
+
+.countdown-section:first-child {	
+	border-left: 0;
+}
+
+.countdown-amount {
+	color: #fff;
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 52px;
+	font-weight: 700;
+	letter-spacing: normal;
+	line-height: 1;
+	padding-bottom: 21px;
+}
+
+/* 11. Newsletter
+-------------------------------------------------*/
+#newsletter {
+	margin: 0 auto;
+	max-width: 480px;	
+}
+
+#newsletter-form {
+	position: relative;
+}
+
+#newsletter-form .form-field {
+	margin-right: 180px;
+}
+
+#newsletter-form .form-submit {
+	height: 42px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 175px;
+}
+
+#newsletter_email,
+#newsletter_submit {
+	display: block;
+	height: 42px;
+	width: 100%;
+}
+
+#newsletter_email {
+	border-right: 0;
+}
+
+/* 12. Modal toggle
+-------------------------------------------------*/
+#main .modal-toggle {
+	bottom: 42px;
+	height: 42px;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+#modal .modal-toggle {
+	margin-bottom: 42px;
+	text-align: center;
+}
+
+#modal .section-title {
+	margin-bottom: 42px;
+}
+
+a.modal-icon {
+    color: rgba(236, 240, 241, 0.6);
+    cursor: pointer;
+    font-size: 26px;
+    transition: all 0.5s ease 0s;
+}
+
+a.modal-icon:hover {
+    color: #12BAAD;
+}
+
+a.modal-button {
+    background: none repeat scroll 0 0 transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.6);
+    padding: 10px 25px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+a.modal-button:hover {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* 13. Team
+-------------------------------------------------*/
+.team-photo {
+	margin-bottom: 45px;
+}
+
+.team-photo img {
+	border-radius: 3px;
+}
+
+.team-desc {
+	margin-bottom: 40px;
+}
+
+.team-desc p {
+	margin: 0 0 12px;
+}
+
+.team-social {
+	list-style: none;
+	margin-left: 0;
+	padding: 0;
+}
+
+.team-social li {
+	float: left;
+	margin-left: 10px;
+}
+
+.team-social li:first-child {
+	margin-left: 0;
+}
+
+.team-social a {
+	background: #49535d;
+	border-radius: 3px;
+	color: #fff;
+	display: inline-block;
+	font-size: 16px;
+	height: 30px;
+	line-height: 1.875;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition:	all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	transition:	all 0.2s ease;
+	width: 30px;
+}
+
+.team-social a:hover {
+	background: #12baad;
+}
+
+.team-social li .fa {
+	margin: 0;
+}
+
+/* 14. Responsive
+-------------------------------------------------*/
+@media only screen and (max-width: 680px) {
+	h1 {
+		font-size: 36px;
+	}
+	.countdown-amount {
+		font-size: 48px;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	.one-half {
+		width: 100%;
+	}
+	.one-third {
+		padding-left: 48px;
+	}	
+	.two-thirds {
+		padding-left: 18px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	h1 {
+		font-size: 30px;
+	}
+	.countdown-section {
+		padding: 28px 6px 28px;
+	}
+	.countdown-amount {
+		font-size: 40px;
+	}
+	#newsletter-form .form-field {
+		margin: 0 0 14px;
+	}
+	#newsletter-form .form-submit {
+		margin: 0 auto;
+		position: static;
+		right: auto;
+		top: auto;
+	}
+	.one-half, .one-third, .two-thirds {
+		width: 100%;
+		padding-left: 48px;
+	}
+	.team-photo {
+		margin-bottom: 30px;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.countdown-section {
+		font-size: 10px;
+		padding: 21px 6px;
+	}
+	.countdown-amount {
+		font-size: 29px;
+	}
+}

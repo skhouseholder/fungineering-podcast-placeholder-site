@@ -1,0 +1,4 @@
+.bg-overlay {
+	background: #040404;
+	filter: alpha(opacity=50);
+}
