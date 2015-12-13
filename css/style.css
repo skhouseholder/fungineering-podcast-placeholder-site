@@ -465,20 +465,23 @@ input[type="submit"]:hover {
 
 /* 11. Newsletter
 -------------------------------------------------*/
-#newsletter {
+#newsletter, .newsletter {
 	margin: 0 auto;
 	max-width: 480px;	
 }
 
-#newsletter-form {
+#newsletter-form,
+.newsletter-form {
 	position: relative;
 }
 
-#newsletter-form .form-field {
+#newsletter-form .form-field,
+.newsletter-form .form-field {
 	margin-right: 180px;
 }
 
-#newsletter-form .form-submit {
+#newsletter-form .form-submit,
+.newsletter-form .form-submit {
 	height: 42px;
 	position: absolute;
 	right: 0;
@@ -486,8 +489,8 @@ input[type="submit"]:hover {
 	width: 175px;
 }
 
-#newsletter_email,
-#newsletter_submit {
+#newsletter_email, .newsletter_email,
+#newsletter_submit, .newsletter_submit, #mc-embedded-subscribe {
 	display: block;
 	height: 42px;
 	width: 100%;
@@ -532,7 +535,7 @@ input[type="submit"]:hover {
 	.countdown-amount {
 		font-size: 40px;
 	}
-	#newsletter-form .form-field {
+	#newsletter-form .form-field, {
 		margin: 0 0 14px;
 	}
 	#newsletter-form .form-submit {
