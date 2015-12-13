@@ -128,7 +128,7 @@ html,
 button,
 input,
 textarea {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 button,
@@ -258,7 +258,7 @@ h2,
 h3,
 h4 {
 	color: #fff;
-	font-family: 'Roboto Slab', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	line-height: 1.16667;
 	margin: 0 0 50px;
@@ -311,9 +311,19 @@ p {
 
 .site-title {
 	font-size: 70px;
-	margin-bottom: 70px;
+	margin-bottom: 48px;
 	font-family: 'Fredoka One', cursive;
 	/*font-family: 'Fredericka the Great', cursive;*/
+}
+
+.image_container {
+	display: block;
+	margin: 0 auto 45px;
+	width: 41px;
+	height: 30px;
+	background-image: url(../images/cat.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 }
 
 .screen-reader-text {
@@ -391,7 +401,7 @@ input[type="submit"]:hover {
 
 .form-wrap .success {
 	color: #dadada;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	min-height: 42px;
 	text-align: center;
 }
