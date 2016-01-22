@@ -295,6 +295,13 @@ p {
 	margin: 0 0 28px;
 }
 
+.landing-subtitle {
+	font-size: 16px;
+	letter-spacing: 1px;
+	margin: 32px 0;
+	text-align: center;
+}
+
 .subtitle {
 	font-size: 14px;
 	letter-spacing: 1px;
@@ -462,6 +469,10 @@ input[type="submit"]:hover {
 	margin: 0 10px 14px 0;
 }
 
+#play-badge {
+	width: 200px;
+	margin: 26px 0px;
+}
 
 /* 11. Newsletter
 -------------------------------------------------*/
