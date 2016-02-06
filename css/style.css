@@ -514,7 +514,8 @@ input[type="submit"]:hover {
 
 .heap-badge-container {
 	position: absolute;
-	right: 4px;
+	right: 8px;
+	bottom: 8px;
 	margin-top: 100px;
 }
 
