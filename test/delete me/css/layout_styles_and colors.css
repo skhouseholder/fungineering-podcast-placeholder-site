@@ -1,0 +1,669 @@
+/*/////////////////////////////////////////
+//
+//   Common stuff
+//
+/////////////////////////////////////////*/
+
+
+@font-face {
+  font-family: 'Carter One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Carter One'), local('CarterOne'), url(../fonts/CarterOne.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Flamenco';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Flamenco'), local('Flamenco-Regular'), url(../fonts/Flamenco-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(../fonts/SourceSansPro-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(../fonts/SourceSansPro-Semibold.woff) format('woff');
+}
+
+
+* {
+	-webkit-box-sizing: border-box;
+	/*font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;*/
+	/*font-family: 'Lora', serif;*/
+}
+
+html, body {
+      width: 100%;
+      height: 100%;
+      background: white;
+      margin:0;
+      padding:0;
+      font-family: 'Source Sans Pro', sans-serif;
+}
+
+input[type=text], input[type=number], textarea {
+	font-family: 'Source Sans Pro', sans-serif;
+	/*font-weight: 300;*/
+	font-weight: 400;
+	padding-left: 5px;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*.page {
+      min-height: 100%;
+      width: 100%;
+}*/
+
+.heading {
+	font-family: 'Carter One', cursive;
+}
+
+.subheading {
+	font-family: 'Flamenco', cursive;
+}
+
+.hidden {
+	display: none;
+}
+
+.content {
+	padding-top: 50px;
+	background: url(../img/diagonal_stripes_light.png);
+	background-repeat: repeat;
+	min-height:100%;
+	position: relative;
+}
+
+
+.card {
+	max-width: 90%;
+	margin: 10px 23px 38px;
+}
+
+.day_container {
+	width: 100%;
+	padding: 1px;
+}
+
+.day_container.Tuesday, .table_singing_group, .color1 {
+	background: rgba(100,0,0,0.1);
+}
+
+.day_container.Wednesday, .table_quarterfinals_score, .color2 {
+	background: rgba(0,0,100,0.1);
+}
+
+.day_container.Thursday, .table_semifinals_score, .color3 {
+	background: rgba(100,100,0,0.1);
+}
+
+.day_container.Friday, .table_finals_score, .color4 {
+	background: rgba(0,100,100,0.1);
+}
+
+.day_container.Saturday, .table_overall_score, .color5 {
+	background: rgba(100,0,100,0.1);
+}
+
+.card .event_name {
+	margin: 0px;
+}
+
+.date {
+	margin-left: -6px;
+	margin-top: 15px;
+	font-size: 21px;
+}
+
+li.button, .add_song_button {
+    list-style: none;
+    max-width: 550px;
+    width: 100%;
+    margin: 20px 0px;
+    text-align: center;
+    border-bottom: 2px solid rgba(0,0,0,0.25);
+}
+
+li.button a, .add_song_button {
+    background-color: #fff;
+    color: #000;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    text-decoration: none;
+    padding: 9px 14px;
+}
+
+li.button span {
+    display: block;
+    padding: 3px 0px;
+    text-align: left;
+}
+
+ul.list_of_buttons {
+	list-style: none;
+	/*background: #ffeeff;*/
+	padding:0;
+}
+
+.song-autocomplete {
+    max-height: 60%;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+    /* add padding to account for vertical scrollbar */
+    padding-right: 20px;
+  }
+
+input[type=submit]:hover {
+	background: #ccccff;
+}
+
+input[type=text],  textarea {
+	display: block;
+	font-size: 1.8em;
+	width: 77%;
+}
+
+
+/*/////////////////////////////////////////
+//
+//   Menu bar
+//
+/////////////////////////////////////////*/
+
+.menu_bar {
+	position: fixed;
+
+	display: block;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 50px; /* should match .content margin-top */
+	background: #fff;
+	z-index: 100;
+	box-shadow: 0px 0px 12px rgba(0,0,0,0.5);	
+	color: black;
+}
+
+.menu_bar a {
+	color: black;
+}
+
+.menu_bar .heading {
+	line-height: 1em;
+}
+
+.title {
+	/*text-align: center;*/
+	/*margin: 10px;*/
+	/*font-size: 24px;*/
+}
+
+/*.time {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	margin: 5px;	
+}*/
+
+.gear_menu {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	margin: 5px;
+}
+
+.event_button {
+	font-size: 1.25em;
+}
+
+.menu_item {
+	display: inline-block;
+	margin-top: 8px;
+	text-align: center;
+	height: 36px;
+	border-right: #ddd solid 1px;
+	padding-top: 7px;
+}
+
+.arrow {
+	font-size: 0.9em;
+	padding-right: 5px;
+}
+
+.menu_item:last-child {
+	border-right: none;
+}
+
+.up_level_button {
+	width: 33%;
+}
+
+.scores_button {
+	width: 23%;
+}
+
+.settings_button {
+	width: 24%;
+}
+
+.time {
+	width: 20%;
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////////
+//
+//   SETTINGS.HTML
+//
+//////////////////////////////////////////////////////////////////////////////////*/
+
+
+ul.list_of_settings {
+	
+}
+
+li.setting_button {
+
+}
+
+li.set_singing_order_button {
+	display: none;
+}
+
+li.import_button.expanded {
+	height: 200px;
+	background: white;
+}
+
+#import_data_textarea {
+	font-size: 0.9em;
+	width: 100%;	
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////
+//
+//   EVENT.HTML
+//
+//////////////////////////////////////////////////////////////////////////////////*/
+
+.event_container, .performance_container, .settings_container, .scores_container {
+	width: 90%;
+	margin: 10px auto;
+}
+
+.settings_content, .singing_order_content {
+	background: rgba(0,0,100,0.1);	
+}
+
+.event_content,
+.performance_content,
+.singing_order_content,
+.settings_content,
+.performance_content,
+.settings_content {
+	/*background: rgba(0,0,100,0.1);*/
+	width: 100%;
+	/*margin-top: -10px;*/
+	/*padding-bottom: 1px;*/
+	position: absolute;
+	bottom: 0px;
+	top: 50px;
+	overflow: scroll;
+}
+
+ul.list_of_performances {
+
+}
+
+li.performance_button, li.mic_tester_button {
+	/*font-weight: bold;*/
+}
+
+li.performance_button.scored a {
+	background: url(../img/checkmark.png), #fff;
+	background-size: 16px 16px;
+	background-repeat: no-repeat, no-repeat;
+	background-position: calc(100% - 11px) center, center;
+	color: #333;
+
+	/*background: url(../img/checkmark16.png);
+	background-repeat: no-repeat;
+	background-position: 95% center;*/
+}
+
+li.performance_button.scored.showing_details a {
+	background-position: calc(100% - 11px) 13px, center;
+}
+
+li.performance_button.button.scored a{
+
+}
+
+.event_container .event_info_container {
+	font-size: 1.5em;
+	padding: 10px 8px 30px;
+	line-height: 1.5;
+}
+
+.singing_order_content .event_info_container {
+	font-size: 1.5em;
+	padding: 10px 8px 0px;
+	line-height: 1.5;
+}
+
+.performance_button .singing_group_members, .performance_button .singing_group_sources {
+	margin: 4px 8px 4px;
+}
+
+.event_name {
+	text-align: center;
+	margin: 10px;	
+}
+
+.event_time {
+	text-align: center;
+}
+
+.scores_buttons, .performance_navigation_buttons {
+	width: 100%;
+	max-width: 550px;
+	margin: 15px, 0;
+}
+
+.my_scores_button, .final_scores_button, .previous_performance_button, .next_performance_button {
+	background: #fff;
+	padding: 20px;
+	display: inline-block;
+	width: 47%;
+	text-align: center;
+	border-bottom: 2px solid rgba(0,0,0,0.25);
+	font-size: 1.4em;
+	color: black;
+}
+
+.final_scores_button, .next_performance_button {
+	margin-left: 2%;
+}
+
+.my_scores_button, .previous_performance_button {
+	margin-right: 2%;
+}
+
+.disabled {
+	background: rgba(0,0,0,0.1);
+	color: rgba(255,255,255,0.5);
+	border-bottom: none;
+}
+
+.set_singing_order_button {
+	
+}
+
+.mic_tester_button {
+
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////
+//
+//   PERFORMANCE.HTML - audit these class names
+//
+//////////////////////////////////////////////////////////////////////////////////*/
+
+
+.performance_info_container {
+
+}
+
+.quartet_sources, .quartet_members {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.2em;
+	padding: 7px 0 7px 2px;
+	line-height: 1.5em;
+}
+
+.performance_content input, .performance_content textarea {
+	width: 100%;
+	/*font-size: 2em;*/
+	font-size: 1.8em;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.back_to_event_link {
+	padding: 0px 10px;
+}
+
+/*.performance_content, .settings_content {
+	padding-top: 50px;
+}*/
+
+.performance_header {
+
+}
+
+.singing_order_button, .singing_order_number, .singing_group_name, .new_performance_button {
+	display: inline-block;
+	font-size: 1.4em;
+}
+
+.add_song_button {
+	background-color: rgba(255,255,255,0.5);
+	display: inline-block;
+	font-size: 1.4em;
+}
+
+.performance_info_container .add_song_button {
+	background: rgba(255,255,255,0.5);
+	margin: 0px 0px 9px;
+}
+
+.performance_header .singing_order_number, .performance_header .singing_group_name {
+	font-size: 1.6em;
+	display: inline;
+}
+
+.singing_group_name {
+	margin: 4px 8px 4px;
+}
+
+.singing_group_form {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.songs_form .song1, .songs_form .song2, .scores_form {
+	margin: 16px 0;
+}
+
+#fred_score_text_box {
+	margin: 0px;
+	width: 33%;
+}
+
+input.bhs_score {
+	width: 29%;
+	margin-top: 12px;
+	margin-bottom: 24px;
+}
+
+.right {
+	float: right;
+	margin-left: 5%;
+}
+
+.left {
+	float: left;
+	margin-right: 6%;
+}
+
+.notes_form {
+	
+}
+
+/***********************************************************/
+
+.section_heading_previous_performances {
+	display: none;
+	font-size: 1.8em;
+	margin: 34px 0px 6px 4px;
+}
+
+ul.previous_performances_by_this_singing_group {
+	list-style: none;
+	/*background: #ffeeff;*/
+	padding-left: 4px;
+	font-size: 1.4em;
+}
+
+li.previous_performance {
+	padding: 16px 0px;
+}
+
+.previous_performance .event_name {
+	text-align: left;
+	margin: 0px;
+	font-weight: 600;
+}
+
+.previous_performance_detail {
+	margin: 8px 0;
+}
+
+.previous_performance.my_score {
+
+}
+
+.previous_performance .songs {
+	list-style: none;
+	/*background: #ffeeff;*/
+	padding:0;
+}
+
+.previous_performance.my_notes {
+
+}
+
+/***********************************************************/
+
+
+.performance_navigation_buttons {
+	margin: 20px 0px 18px;
+}
+
+.previous_performance_button {
+
+}
+
+.next_performance_button {
+
+}
+
+
+/*singing_order.html*/
+/*
+input[type=text] .performer_form_textbox {
+	width: 80%;
+}*/
+
+
+/*singing_order.html*/
+
+/*singing_order_form input {
+	padding: 10px 0;
+}*/
+
+
+.performer_label, .performer_form_textbox {
+	font-size: 2.0em;
+}
+
+.performer_box_and_label input[type=text] {
+	display: inline;
+	width: 77%;
+	/*font-size: 2.0em;*/
+	font-size: 1.6em;
+}
+
+.performer_label {
+	display: inline-block;
+	width: 15%;
+	text-align: center;
+}
+
+ul.list_of_performers {
+	list-style: none;
+	padding: 0;
+}
+
+.performer_box_and_label {
+	width: 100%;
+	margin: 15px 0px;
+	/*font-weight: 300;*/
+	font-weight: 400;
+}
+
+.singing_order_submit_button {
+	width: 95%;
+	font-size: 1.8em;
+	padding: 10px;
+}
+
+.singing_order_submit_button_wrapper {
+	width: 100%;
+	text-align: center;
+}
+
+.buffer_space_for_keyboard {
+	min-height: 400px;
+}
+
+
+/* Scores.html */
+table {
+	font-size: 1.1em;
+	table-layout: fixed;
+}
+
+.score_column {
+	/*width: 30px;*/
+	text-align: center;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+tr {
+	min-height: 100px;
+}
+
+.header {
+	background: rgba(0,100,0,0.1);
+	border-left: rgba(0,100,0,0.1);
+	border-right: rgba(0,100,0,0.1);
+}
+
+.table_singing_group {
+	padding: 9px 5px;
+	/*width: 150px;*/
+}
+
+thead a {
+	color: black;
+}
+
+.setting_button {
+	font-size: 1.25em;
+	text-align: left;
+}

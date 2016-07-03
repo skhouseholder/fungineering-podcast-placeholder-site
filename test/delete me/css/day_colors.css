@@ -1,0 +1,343 @@
+/*/////////////////////////////////////////
+//
+//   Common stuff
+//
+/////////////////////////////////////////*/
+
+html, body {
+      background: white;
+}
+
+.content {
+	background: url(../img/diagonal_stripes_light.png);
+}
+
+.day_container.Tuesday, .table_singing_group, .color1 {
+	background: rgba(100,0,0,0.2);
+}
+
+.day_container.Wednesday, .table_quarterfinals_score, .color2 {
+	background: rgba(0,0,100,0.2);
+}
+
+.day_container.Thursday, .table_semifinals_score, .color3 {
+	background: rgba(100,100,0,0.2);
+}
+
+.day_container.Friday, .table_finals_score, .color4 {
+	background: rgba(0,100,100,0.2);
+}
+
+.day_container.Saturday, .table_overall_score, .color5 {
+	background: rgba(100,0,100,0.2);
+}
+
+li.button, .add_song_button {
+    border-bottom: 2px solid rgba(0,0,0,0.25);
+}
+
+li.button a, .add_song_button {
+    background-color: #fff;
+    color: #000;
+}
+
+/*input[type=submit]:hover {
+	background: #ccccff;
+}*/
+
+/*/////////////////////////////////////////
+//
+//   Menu bar
+//
+/////////////////////////////////////////*/
+
+.menu_bar {
+	background: #fff;
+	box-shadow: 0px 0px 12px rgba(0,0,0,0.5);	
+	color: black;
+}
+
+.menu_bar a {
+	color: black;
+}
+
+.menu_item {
+	border-right: #ddd solid 1px;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////
+//
+//   SETTINGS.HTML
+//
+//////////////////////////////////////////////////////////////////////////////////*/
+
+li.import_button.expanded {
+	background: white;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////
+//
+//   EVENT.HTML
+//
+//////////////////////////////////////////////////////////////////////////////////*/
+
+.settings_content {
+	background: rgba(0,0,100,0.1);	
+}
+
+li.performance_button.scored a {
+	background: url(../img/checkmark.png), #fff;
+	color: #333;
+	background-size: 16px 16px;
+	background-repeat: no-repeat, no-repeat;
+	background-position: calc(100% - 11px) center, center;
+}
+
+.my_scores_button, .final_scores_button, .previous_performance_button, .next_performance_button {
+	background: #fff;
+	border-bottom: 2px solid rgba(0,0,0,0.25);
+	color: black;
+}
+
+.disabled {
+	background: rgba(0,0,0,0.1);
+	color: rgba(255,255,255,0.5);
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////
+//
+//   PERFORMANCE.HTML - audit these class names
+//
+//////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+.add_song_button {
+	background-color: rgba(255,255,255,0.5);
+}
+
+.performance_info_container .add_song_button {
+	background: rgba(255,255,255,0.5);
+}
+
+
+/***********************************************************/
+
+.header {
+	background: rgba(0,100,0,0.1);
+	border-collapse: collapse;
+}
+
+thead a {
+	color: black;
+}
+
+table {
+	/*border:1px solid #000;*/
+	border-collapse: collapse;
+}
+
+tr {
+	border-top:1px solid #000;
+}
+
+tr + tr {
+	border-top:1px solid rgba(255,255,255,0.5);
+}
+
+td {
+	border-left:1px solid #000;
+}
+
+td + td {
+	border-left:1px solid rgba(255,255,255,0.5);
+}
+
+/*/////////////////////////////////////////
+//
+//   Common stuff
+//
+/////////////////////////////////////////*/
+
+html.dark, .dark body {
+      background: #333;
+      color: rgba(255,255,255,0.35);
+}
+
+.dark li.button, .dark .add_song_button {
+    border-bottom: 3px solid rgba(0,0,0,1);
+}
+
+.dark li.button a, .dark .add_song_button {
+    background-color: rgba(0,0,0,0.5);
+    color: rgba(255,255,255,0.35);
+}
+
+.dark .my_scores_button,
+.dark .final_scores_button,
+.dark .previous_performance_button,
+.dark .next_performance_button {
+	border-bottom: 3px solid rgba(0,0,0,1);
+	background-color: rgba(0,0,0,0.3);
+    color: rgba(255,255,255,0.35);
+}
+
+.dark .content {
+	background: url(../img/diagonal_stripes_light.png);
+}
+
+.dark .day_container.Tuesday,
+.dark .table_singing_group,
+.dark .color1 {
+	background: rgba(20,0,0,0.95);
+}
+
+.dark .day_container.Wednesday,
+.dark .table_quarterfinals_score,
+.dark .color2 {
+	background: rgba(0,0,20,0.95);
+}
+
+.dark .day_container.Thursday,
+.dark .table_semifinals_score,
+.dark .color3 {
+	background: rgba(20,20,0,0.95);
+}
+
+.dark .day_container.Friday,
+.dark .table_finals_score,
+.dark .color4 {
+	background: rgba(0,20,20,0.95);
+}
+
+.dark .day_container.Saturday,
+.dark .table_overall_score,
+.dark .color5 {
+	background: rgba(20,0,20,0.95);
+}
+
+/*/////////////////////////////////////////
+//
+//   Menu bar
+//
+/////////////////////////////////////////*/
+
+.dark .menu_bar {
+	background: #010101;
+	box-shadow: 0px 0px 12px rgba(0,0,0,0.5);	
+	color: rgba(255,255,255,0.35);
+}
+
+.dark .menu_bar a {
+	color: rgba(255,255,255,0.35);
+}
+
+.dark .menu_item {
+	border-right: #444 solid 1px;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////
+//
+//   SETTINGS.HTML
+//
+//////////////////////////////////////////////////////////////////////////////////*/
+
+.dark li.import_button.expanded {
+	background: #666;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////
+//
+//   EVENT.HTML
+//
+//////////////////////////////////////////////////////////////////////////////////*/
+
+.dark .settings_content {
+	background: rgba(0,0,10,0.90);	
+}
+
+.dark li.performance_button.scored a {
+	background: url(../img/checkmark.png), #666;
+	color: #ddd;
+	background-size: 16px 16px;
+	background-repeat: no-repeat, no-repeat;
+	background-position: calc(100% - 11px) center, center;
+}
+
+.dark .disabled {
+	background: rgba(0,0,0,0.1);
+	color: rgba(255,255,255,0.2);
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////
+//
+//   PERFORMANCE.HTML - audit these class names
+//
+//////////////////////////////////////////////////////////////////////////////////*/
+
+
+.dark input, .dark textarea {
+	padding: 2px 2px 2px 5px;
+	border: none;
+	background: rgba(255,255,255,0.15);
+	color: rgba(255,255,255,0.35);
+}
+
+.dark input::-webkit-input-placeholder,
+.dark textarea::-webkit-input-placeholder {
+    color: rgba(255,255,255,0.2);
+}
+/*input:-moz-placeholder {
+    color: rgba(255,255,255,0.2);
+}*/
+/*input::-moz-placeholder {
+    color: rgba(255,255,255,0.2);
+}
+input:-ms-input-placeholder {
+    color: rgba(255,255,255,0.2);
+}*/
+
+.dark .add_song_button {
+	background-color: rgba(255,255,255,0.5);
+}
+
+.dark .performance_info_container .add_song_button {
+	background: rgba(0,0,0,0.2);
+}
+
+
+/***********************************************************/
+
+.dark .header {
+	background: rgba(0,10,0,0.8);
+	border-collapse: collapse;
+	/*border-left: rgba(0,100,0,0.1);
+	border-right: rgba(0,100,0,0.1);*/
+}
+
+.dark thead a {
+	color: rgba(255,255,255,0.35);
+}
+
+.dark table {
+	/*border:1px solid #000;*/
+	border-collapse: collapse;
+}
+
+.dark tr {
+	/*border-top:1px solid #000;*/
+}
+
+.dark tr + tr {
+	border-top:1px solid rgba(0,0,0,0.1);
+}
+
+.dark td {
+	/*border-left:1px solid #000;*/
+}
+
+.dark td + td {
+	/*border-left:1px solid rgba(0,0,0,0.1);*/
+}

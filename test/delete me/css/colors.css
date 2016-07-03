@@ -1,0 +1,569 @@
+/*/////////////////////////////////////////
+//
+//   Common stuff
+//
+/////////////////////////////////////////*/
+
+html.light, .light body {
+      background: white;
+}
+
+/*a:active {
+    background: red;
+}*/
+
+.light .content {
+	background: url(../img/triangles.png);
+	
+	/*background-color: #aaaaff;*/
+	/*background-image:
+	repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 45px),
+	repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 45px),
+	linear-gradient(60deg, rgba(0,0,0,0.05) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.05) 75%, rgba(0,0,0,.05)),
+	linear-gradient(120deg, rgba(0,0,0,.05) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.05) 75%, rgba(0,0,0,.05));
+	background-size: 53px 90px;*/
+	/* from http://lea.verou.me/css3patterns/#argyle */
+
+	/*background-color:white;
+background-image: linear-gradient(90deg, rgba(0,0,200,.4) 50%, transparent 50%),
+linear-gradient(rgba(0,0,200,.4) 50%, transparent 50%);
+background-size:12px 12px;*/
+
+/* -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+background: repeating-linear-gradient(
+	45deg,
+	rgba(0,0,0,0) 5px,
+	rgba(10,35,45,0.15) 5px,
+	rgba(10,35,45,0.15) 10px,
+	rgba(211,119,111,0) 10px,
+	rgba(211,119,111,0) 35px,
+	rgba(211,119,111,0.15) 35px,
+	rgba(211,119,111,0.15) 40px,
+	rgba(10,35,45,0.15) 40px,
+	rgba(10,35,45,0.15) 50px,
+	rgba(10,35,45,0) 50px,
+	rgba(10,35,45,0) 60px,
+	rgba(211,119,111,0.15) 60px,
+	rgba(211,135,111,0.15) 70px,
+	rgba(247,179,84,0.15) 70px,
+	rgba(247,179,84,0.15) 80px,
+	rgba(247,179,84,0) 80px,
+	rgba(247,179,84,0) 90px,
+	rgba(211,119,111,0.15) 90px,
+	rgba(211,119,111,0.15) 110px,
+	rgba(211,119,111,0) 110px,
+	rgba(211,119,111,0) 120px,
+	rgba(10,35,45,0.15) 120px,
+	rgba(10,35,45,0.15) 140px
+),
+
+repeating-linear-gradient(
+	135deg,
+	rgba(0,0,0,0) 5px,
+	rgba(10,35,45,0.15) 5px,
+	rgba(10,35,45,0.15) 10px,
+	rgba(211,119,111,0) 10px,
+	rgba(211,119,111,0) 35px,
+	rgba(211,119,111,0.15) 35px,
+	rgba(211,119,111,0.15) 40px,
+	rgba(10,35,45,0.15) 40px,
+	rgba(10,35,45,0.15) 50px,
+	rgba(10,35,45,0) 50px,
+	rgba(10,35,45,0) 60px,
+	rgba(211,119,111,0.15) 60px,
+	rgba(211,119,111,0.15) 70px,
+	rgba(247,179,84,0.15) 70px,
+	rgba(247,179,84,0.15) 80px,
+	rgba(247,179,84,0) 80px,
+	rgba(247,179,84,0) 90px,
+	rgba(211,119,111,0.15) 90px,
+	rgba(211,119,111,0.15) 110px,
+	rgba(211,119,111,0) 110px,
+	rgba(211,119,111,0) 140px,
+	rgba(10,35,45,0.15) 140px,
+	rgba(10,35,45,0.15) 160px
+),
+
+rgb(255, 255, 255);
+
+-webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;*/
+}
+
+.odd_day {
+    /*background: rgba(255,255,255,0.4);*/
+}
+
+.light .day_container.update_message {
+	background: rgba(66, 63, 178, 0.1);
+}
+
+.light .day_container.Tuesday,
+.light .table_singing_group,
+.light .color1 {
+	background: rgba(100,0,0,0.2);
+	/*background: rgba(66, 63, 178, 0.2);*/
+}
+
+.light .day_container.Wednesday,
+.light .table_quarterfinals_score,
+.light .table_chorus_score,
+.light .about_content,
+.light .color2 {
+	background: rgba(0,0,100,0.2);
+	/*background: rgba(66, 63, 178, 0.3);*/
+}
+
+.light .day_container.Thursday,
+.light .table_semifinals_score,
+.light .table_cbqc_score,
+.light .color3 {
+	background: rgba(100,100,0,0.2);
+	/*background: rgba(66, 63, 178, 0.4);*/
+}
+
+.light .day_container.Friday,
+.light .table_finals_score,
+.light .table_cbqc_singing_group,
+.light .color4 {
+	background: rgba(0,100,100,0.2);
+	/*background: rgba(66, 63, 178, 0.5);*/
+}
+
+.light .day_container.Saturday,
+.light .table_overall_score,
+.light .table_chorus_singing_group,
+.light .color5 {
+	background: rgba(100,0,100,0.2);
+	/*background: rgba(66, 63, 178, 0.6);*/
+}
+
+.light li.button,
+.light .add_song_button {
+    border-bottom: 2px solid rgba(0,0,0,0.25);
+}
+
+.light li.send_data_button {
+	background: #fff;
+}
+
+.light li.button a,
+.light .add_song_button {
+    background-color: #fff;
+    color: #000;
+}
+
+.light #loading-overlay {
+	background: #eee;
+  	color: #ccc;
+}
+
+/*input[type=submit]:hover {
+	background: #ccccff;
+}*/
+
+/*/////////////////////////////////////////
+//
+//   Menu bar
+//
+/////////////////////////////////////////*/
+
+.light .menu_bar {
+	background: #fff;
+	box-shadow: 0px 0px 12px rgba(0,0,0,0.5);	
+	color: black;
+}
+
+.light .menu_bar a {
+	color: black;
+}
+
+.light .menu_item {
+	border-right: #ddd solid 1px;
+}
+
+.content .toggle_theme_button {
+	background: rgba(255,255,255,0.5);
+	border-bottom: 2px rgba(0,0,0,0.2) solid;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////
+//
+//   SETTINGS.HTML
+//
+//////////////////////////////////////////////////////////////////////////////////*/
+
+.light li.import_button.expanded, .light li.clear_data_button.expanded {
+	background: white;
+}
+
+.light .setting_button.current-year {
+	box-shadow: rgba(255, 0, 0, 0.3) 0px 0px 10px 3px;
+}
+
+.light li.import_button .import_data_submit_button,
+.light li.send_data_button.button .mailto_link {
+	background-color: rgba(100,255,100,0.6);
+}
+
+.light li.clear_data_button .delete_button {
+	background-color: rgba(255,100,100,1);
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////
+//
+//   EVENT.HTML
+//
+//////////////////////////////////////////////////////////////////////////////////*/
+
+.light .settings_content {
+	background: rgba(0,0,100,0.1);	
+}
+
+.light .choose_dark_colors_button {
+	display: block;
+}
+
+.light .choose_light_colors_button {
+	display: none;
+}
+
+.dark .choose_dark_colors_button {
+	display: none;
+}
+
+.dark .choose_light_colors_button {
+	display: block;
+}
+
+.light li.performance_button.scored a {
+	background: url(../img/checkmark.png), #fff;
+	color: #333;
+	background-size: 16px 16px;
+	background-repeat: no-repeat, no-repeat;
+	background-position: calc(100% - 11px) center, center;
+}
+
+.light .my_scores_button,
+.light .final_scores_button,
+.light .previous_performance_button,
+.light .next_performance_button {
+	background: #fff;
+	border-bottom: 2px solid rgba(0,0,0,0.4);
+	color: black;
+}
+
+.light .disabled {
+	background: rgba(0,0,0,0.1);
+	color: rgba(255,255,255,0.5);
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////
+//
+//   PERFORMANCE.HTML - audit these class names
+//
+//////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+.light .add_song_button {
+	background-color: rgba(255,255,255,0.5);
+}
+
+.light .performance_info_container .add_song_button {
+	background: rgba(255,255,255,0.5);
+}
+
+
+/***********************************************************/
+
+.light .header {
+	background: rgba(0,100,0,0.1);
+	border-collapse: collapse;
+}
+
+.light thead a {
+	color: black;
+}
+
+.light table {
+	/*border:1px solid #000;*/
+	border-collapse: collapse;
+}
+
+.light tr {
+	border-top:1px solid #000;
+}
+
+.light tr + tr {
+	border-top:1px solid rgba(255,255,255,0.5);
+}
+
+.light td {
+	border-left:1px solid #000;
+}
+
+.light td + td {
+	border-left:1px solid rgba(255,255,255,0.5);
+}
+
+.light .warning_bar {
+	background: #FFEC3B;
+}
+
+/*/////////////////////////////////////////
+//
+//              DARK
+//           Spooooooky! 
+//
+/////////////////////////////////////////*/
+
+html.dark, .dark body {
+      background: #333;
+      color: rgba(255,255,255,0.5);
+}
+
+.dark a {
+	color: rgb(78, 78, 183);
+}
+
+.dark li.button, .dark .add_song_button {
+    border-bottom: 3px solid rgba(0,0,0,1);
+}
+
+.dark li.button a, .dark .add_song_button {
+    background-color: rgba(0,0,0,0.5);
+    color: rgba(255,255,255,0.5);
+}
+
+.dark .setting_button.current-year {
+	box-shadow: rgba(255, 255, 0, 0.3) 0px 0px 10px 6px;
+}
+
+.dark .my_scores_button,
+.dark .final_scores_button,
+.dark .previous_performance_button,
+.dark .next_performance_button {
+	border-bottom: 3px solid rgba(0,0,0,1);
+	background-color: rgba(0,0,0,0.5);
+    color: rgba(255,255,255,0.5);
+}
+
+.dark .content {
+	/*background: url(../img/diagonal_stripes_light.png);*/
+	background: url(../img/dimension_big.png);
+}
+
+.dark #loading-overlay {
+	background: #111;
+  	color: rgba(255,255,255,0.5);
+}
+
+.dark .day_container.Tuesday,
+.dark .table_singing_group,
+.dark .color1 {
+	background: rgba(20,0,0,0.8);
+}
+
+.dark .day_container.Wednesday,
+.dark .table_quarterfinals_score,
+.dark .table_chorus_score,
+.dark .about_content,
+.dark .color2 {
+	background: rgba(0,0,20,0.8);
+}
+
+.dark .day_container.Thursday,
+.dark .table_semifinals_score,
+.dark .table_cbqc_score,
+.dark .color3 {
+	background: rgba(20,20,0,0.8);
+}
+
+.dark .day_container.Friday,
+.dark .table_finals_score,
+.dark .table_cbqc_singing_group,
+.dark .color4 {
+	background: rgba(0,20,20,0.8);
+}
+
+.dark .day_container.Saturday,
+.dark .table_overall_score,
+.dark .table_chorus_singing_group,
+.dark .color5 {
+	background: rgba(20,0,20,0.8);
+}
+
+.dark .column_headings_tip {
+	background: rgba(32,32,32,1);
+}
+
+/*/////////////////////////////////////////
+//
+//   Menu bar
+//
+/////////////////////////////////////////*/
+
+.dark .menu_bar {
+	background: #111111;
+	box-shadow: 0px 0px 12px rgba(0,0,0,0.5);	
+	color: rgba(255,255,255,0.5);
+}
+
+.dark .menu_bar a, .dark .time {
+	color: rgba(255,255,255,0.35);
+}
+
+.dark .menu_item {
+	border-right: #444 solid 1px;
+}
+
+.dark .content .toggle_theme_button {
+	background: rgba(0,0,0,0.3);
+	border-bottom: 2px rgba(0,0,0,0.2) solid;
+}
+
+.dark .ui-widget-content {
+	background: #aaa;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////
+//
+//   SETTINGS.HTML
+//
+//////////////////////////////////////////////////////////////////////////////////*/
+
+.dark li.import_button.expanded, .dark li.clear_data_button.expanded   {
+	/*background: #666;*/
+}
+
+.dark .warning_bar {
+	background: #504B1F;
+}
+
+.dark li.send_data_button,
+.dark li.import_button {
+	background-color: rgba(0,0,0,0.5);
+}
+
+.dark li.send_data_button a,
+.dark li.import_button a {
+	background: none;
+}
+
+.dark li.import_button .import_data_submit_button,
+.dark li.send_data_button.button .mailto_link {
+	background-color: rgba(51, 132, 51, 0.6);
+}
+
+.dark li.clear_data_button .delete_button {
+	background-color: rgba(125, 37, 37, 1);
+}
+
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////////
+//
+//   EVENT.HTML
+//
+//////////////////////////////////////////////////////////////////////////////////*/
+
+.dark .settings_content {
+	background: rgba(0,0,10,0.8);	
+}
+
+.dark li.performance_button.scored a {
+	background: url(../img/checkmark.png), #666;
+	color: #ddd;
+	background-size: 16px 16px;
+	background-repeat: no-repeat, no-repeat;
+	background-position: calc(100% - 11px) center, center;
+}
+
+.dark .disabled {
+	background: rgba(0,0,0,0.1);
+	color: rgba(255,255,255,0.2);
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////
+//
+//   PERFORMANCE.HTML - audit these class names
+//
+//////////////////////////////////////////////////////////////////////////////////*/
+
+
+.dark input, .dark textarea {
+	padding: 2px 2px 2px 5px;
+	border: none;
+	background: rgba(255,255,255,0.15);
+	color: rgba(255,255,255,0.5);
+}
+
+.dark input::-webkit-input-placeholder,
+.dark textarea::-webkit-input-placeholder {
+    color: rgba(255,255,255,0.35);
+}
+/*input:-moz-placeholder {
+    color: rgba(255,255,255,0.2);
+}*/
+/*input::-moz-placeholder {
+    color: rgba(255,255,255,0.2);
+}
+input:-ms-input-placeholder {
+    color: rgba(255,255,255,0.2);
+}*/
+
+.dark .add_song_button {
+	background-color: rgba(255,255,255,0.5);
+}
+
+.dark .performance_info_container .add_song_button {
+	background: rgba(0,0,0,0.2);
+}
+
+
+/***********************************************************/
+
+.dark .header {
+	background: rgba(0,10,0,0.8);
+	border-collapse: collapse;
+	/*border-left: rgba(0,100,0,0.1);
+	border-right: rgba(0,100,0,0.1);*/
+}
+
+.dark thead a {
+	color: rgba(255,255,255,0.5);
+}
+
+.dark table {
+	/*border:1px solid #000;*/
+	border-collapse: collapse;
+}
+
+.dark tr {
+	/*border-top:1px solid #000;*/
+}
+
+.dark tr + tr {
+	border-top:1px solid rgba(0,0,0,0.1);
+}
+
+.dark td {
+	/*border-left:1px solid #000;*/
+}
+
+.dark td + td {
+	/*border-left:1px solid rgba(0,0,0,0.1);*/
+}

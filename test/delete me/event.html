@@ -1,0 +1,108 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+
+
+
+	<script src="js/jquery-1.9.1.js"></script>
+  	<script src="js/jquery-ui.1.10.3.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/initialData.js"></script>
+	<script src="js/menu_bar.js"></script>
+	
+	<script>
+	updateColors();
+	</script>
+
+	<link rel="stylesheet" href="css/layout_styles.css" type="text/css">
+	<link rel="stylesheet" href="css/colors.css" type="text/css">
+
+	<link rel="stylesheet" href="css/light_theme.css" type="text/css">
+	<!--link rel="stylesheet" href="light_theme.css" type="text/css"-->
+	<link rel="stylesheet" href="css/jquery-ui-smoothness.css" />
+	<!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700|Cabin:400,600,700|Flamenco|Carter+One' rel='stylesheet' type='text/css'> -->
+
+	<script type='application/javascript' src='js/fastclick.min.js'></script>
+	<script type="text/javascript" src="cordova.js"></script>
+		<!--script type="text/javascript">
+      window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+        heap.load("47566328");
+  </script-->
+
+      <script type="text/javascript">
+      window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+        heap.load("3639290455");
+  </script>
+  	
+</head>
+
+<body>
+
+	<div id="loading-overlay">
+	  <!-- <div id="loading-message-container">
+	    hello!
+	  </div> -->
+	</div>
+
+	<div class="menu_bar">
+		<a href="#" class="menu_item up_level_button"><span class="arrow">&#9664;</span> <span class="up_level_text"> ... </span></a><a href="scores.html" class="menu_item scores_button">Scores</a><a href="settings.html" class="menu_item settings_button">Options</a><!--div class="menu_item time">12:46</div-->
+	</div>
+
+
+	<div class="content">
+		<div class="event_content">
+			<div class="toggle_theme_button">Toggle brightness</div>
+			<div class="event_container">
+				<div class="event_info_container subheading">
+					<div class="event_name">Loading event name...</div>
+					<div class="event_time">Loading event time</div>
+				</div>
+
+				<div class="scores_buttons">
+					<a href="scores.html" class="my_scores_button button">My scores</a>
+					<a class="final_scores_button button" href="http://www.harmonize.ws/harmonetreporter/scores/2016/scores16.htm">BHS&nbsp;Scores</a>
+				</div>
+
+				<ul class="list_of_buttons list_of_performances">
+					<div class="contestable_performances">
+						<div class="performance_button_wrapper">
+							<li class="performance_button button scored">
+								<a href="performance.html">
+									<span class="singing_group_name"></span>
+					            	<span class="singing_group_members"></span>
+					            	<span class="singing_group_sources"></span>
+					            	<!-- stage time test -->
+									<span class="stage_time"></span>
+								</a>
+							</li>
+						</div>
+					</div>
+					<div class="update_app_message hidden">Update this app on the day of the event to auto-fill the singing order (if an app update is available). If not, set the singing order yourself using the button below.</div>
+					<li class="set_singing_order_button button">
+						<a href="singing_order.html" class="singing_order_link">
+							<span class="singing_order_button">
+								Set singing order manually
+							</span>
+						</a>
+					</li>
+
+					<li class="create_new_performance_button button">
+						<a href="performance.html" class="create_new_performance_link">
+							<span class="new_performance_button">
+								Create new performer
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="warning_bar 2014 hidden">
+		<div class="heading">Viewing <span class="warning-year">previous</span> contest data</div>
+	</div>
+	<script src="js/event.js"></script>
+</body>
+
+</html>

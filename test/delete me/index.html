@@ -1,0 +1,195 @@
+
+
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <!-- <meta name="format-detection" content="telephone=no" /> -->
+
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" /> -->
+
+
+    <!-- <meta name="viewport" content="width=device-width, target-densitydpi=high-dpi" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/index.css" /> -->
+    <script src="js/jquery-1.9.1.js"></script>
+	<script src="js/jquery-ui.1.10.3.js"></script>
+	<script src="js/menu_bar.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/initialData.js"></script>
+	<script src="js/index.js"></script>
+	
+	<script>
+	updateColors();
+	</script>
+
+	<link rel="stylesheet" href="css/layout_styles.css" type="text/css">
+	<link rel="stylesheet" href="css/colors.css" type="text/css">
+	<link rel="stylesheet" href="css/light_theme.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery-ui-smoothness.css" />
+
+	<!--script type="text/javascript">
+      window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+        heap.load("47566328");
+  </script-->
+
+      <script type="text/javascript">
+      window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+        heap.load("3639290455");
+  </script>
+
+	<script type='application/javascript' src='js/fastclick.min.js'></script>
+
+	
+
+</head>
+
+<body>
+
+	<div id="loading-overlay">
+	  <!-- <div id="loading-message-container"> -->
+	    <!-- <div id="loading-spinner"><i class="fa fa-music fa-spin"></i></div> -->
+	  <!-- </div> -->
+	</div>
+
+	<div class="menu_bar">
+		<a href="#" class="menu_item up_level_button"><span class="arrow">&#9664;</span> <div class="up_level_text"> ... </div></a><a href="scores.html" class="menu_item scores_button">Scores</a><a href="settings.html" class="menu_item settings_button">Options</a><!--div class="menu_item time">12:46</div-->
+	</div>
+
+	<div class="content">
+		<div class="day_container Tuesday">
+			<div class="toggle_theme_button">Toggle brightness</div>
+
+			<div class="card" id="Tuesday">
+				<div class="date heading">
+					Tuesday<span class="2016">, July 5</span>
+				</div>
+				<ul class="list_of_buttons list_of_events">
+					<li class="event_button button">
+				        <a href="event.html?event=0&color=1">
+				            <span class="event_name">HF Youth Contest<span class="2016"> – Schermerhorn</span></span>
+				            <span class="2016">5p&nbsp;- 9:30p</span>
+				        </a>
+				    </li>
+				    <li class="event_button button dated-2014 dated-2015">
+				        <a href="event.html?event=1&color=1">
+				            <span class="event_name">Larry&nbsp;Ajer<span class="dated-2014 dated-2015"> – Westin&nbsp;Allegheny</span></span>
+				            <span class="dated-2014 dated-2015">9p&nbsp;- 12:00a</span>
+				        </a>
+				    </li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="day_container odd_day Wednesday">
+			<div class="card" id="Wednesday">
+				<div class="date heading">
+					Wednesday<span class="2016">, July 6</span>
+				</div>
+				<ul class="list_of_events list_of_buttons">
+					<li class="event_button button">
+				        <a href="event.html?event=2&color=2">
+				            <span class="event_name">Quarterfinals&nbsp;#1<span class="2016"> – Bridgestone</span></span>
+				            <span class="2016">10a - 3p</span>
+				        </a>
+				    </li>
+				    <li class="event_button button">
+				        <a href="event.html?event=3&color=2">
+				            <span class="event_name">Quarterfinals&nbsp;#2<span class="2016"> – Bridgestone</span></span>
+				            <span class="2016">4:30p - 9:30p</span>
+				        </a>
+				    </li>
+				    <li class="event_button button">
+				        <a href="event.html?event=6&color=2">
+				            <span class="event_name">AIC&nbsp;Show&nbsp;#1<span class="2016"> – Schermerhorn</span></span>
+				            <span class="2016">7:30p - 10:00p</span>
+				        </a>
+				    </li> 				    
+				</ul>
+			</div>
+		</div>
+
+		<div class="day_container Thursday">
+			<div class="card" id="Thursday">
+				<div class="date heading">
+					Thursday<span class="2016">, July 7</span>
+				</div>
+				<ul class="list_of_events list_of_buttons">
+					<li class="event_button button">
+				        <a href="event.html?event=4&color=3">
+				            <span class="event_name">Semifinals<span class="2016"> – Bridgestone</span></span>
+				            <span class="2016">11a - 3:30p</span>
+				        </a>
+				    </li>
+				    <li class="event_button button">
+				        <a href="event.html?event=6&color=2">
+				            <span class="event_name">AIC&nbsp;Show&nbsp;#2<span class="2016"> – Schermerhorn</span></span>
+				            <span class="2016">7:30p&nbsp;- 10p</span>
+				        </a>
+				    </li> 
+				</ul>
+			</div>
+		</div>
+
+		<div class="day_container odd_day Friday">
+			<div class="card" id="Friday">
+				<div class="date heading">
+					Friday<span class="2016">, July 8</span>
+				</div>
+				<ul class="list_of_events list_of_buttons">
+					<li class="event_button button">
+				        <a href="event.html?event=7&color=4">
+				            <span class="event_name">Chorus Contest&nbsp;#1<span class="2016"> – Bridgestone</span></span>
+				            <span class="2016">10a&nbsp;- 2:30p</span>
+				        </a>
+				    </li> 
+				    <li class="event_button button">
+				        <a href="event.html?event=8&color=4">
+				            <span class="event_name">Chorus Contest&nbsp;#2<span class="2016"> – Bridgestone</span></span>
+				            <span class="2016">4p&nbsp;- 9:00p</span>
+				        </a>
+				    </li> 
+				</ul>
+			</div>
+		</div>
+
+		<div class="day_container Saturday">
+			<div class="card" id="Saturday">
+				<div class="date heading">
+					Saturday<span class="2016">, July 9</span>
+				</div>
+				<ul class="list_of_events list_of_buttons">
+					<li class="event_button button">
+				        <a href="event.html?event=5&color=5">
+				            <span class="event_name">World Harmony Jamboree<span class="2016"> – MCC&nbsp;Davidson Ballroom</span></span>
+				            <span class="2016">1:00p</span>
+				        </a>
+				    </li> 
+					<li class="event_button button">
+				        <a href="event.html?event=9&color=5">
+				            <span class="event_name">Saturday Spectacular<span class="2016"> – Bridgestone</span></span>
+				            <span class="2016">5:00p&nbsp;- 6:30p</span>
+				        </a>
+				    </li> 
+				    <li class="event_button button">
+				        <a href="event.html?event=10&color=5">
+				            <span class="event_name">Finals!<span class="2016"> – Bridgestone</span></span>
+				            <span class="2016">7:00p&nbsp;- 10:00p</span>
+				        </a>
+				    </li> 
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="warning_bar hidden">
+		<div class="heading">Viewing <span class="warning-year">previous</span> contest data</div>
+	</div>
+
+	<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+
+    </script>
+</body>
+
+</html>

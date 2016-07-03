@@ -1,0 +1,928 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"lo",
+				"loadUserData"
+			],
+			[
+				"temp",
+				"temp2015Data"
+			],
+			[
+				"settings",
+				"settings_container"
+			],
+			[
+				"show",
+				"show"
+			],
+			[
+				"update",
+				"updateToMultiYearDataFormat"
+			],
+			[
+				"global",
+				"globalData"
+			],
+			[
+				"last",
+				"last-child"
+			],
+			[
+				"image",
+				"image-service"
+			],
+			[
+				"logo",
+				"logo-text"
+			],
+			[
+				"performace",
+				"performanceIndex"
+			],
+			[
+				"import",
+				"import_data_submit_button"
+			],
+			[
+				"import_",
+				"import_button"
+			],
+			[
+				"score",
+				"score_url_suffix"
+			],
+			[
+				"sco",
+				"score_url_suffix"
+			],
+			[
+				"night",
+				"night"
+			],
+			[
+				"text",
+				"textBoxID"
+			],
+			[
+				"song",
+				"songIndex"
+			],
+			[
+				"color",
+				"colorIndex"
+			],
+			[
+				"get",
+				"getQueryVariable"
+			],
+			[
+				"performer",
+				"performer_form_textbox"
+			],
+			[
+				"per",
+				"performer_template"
+			],
+			[
+				"new",
+				"newSongIndex"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"next",
+				"next_performance_button"
+			],
+			[
+				"quartetDe",
+				"quartetDetailsIndex"
+			],
+			[
+				"sining",
+				"singingGroup"
+			],
+			[
+				"sing",
+				"singing_group_sources"
+			],
+			[
+				"perform",
+				"performanceIndex"
+			],
+			[
+				"event",
+				"eventIndex"
+			],
+			[
+				"quart",
+				"quartetDetailsIndex"
+			],
+			[
+				"Quartet",
+				"quartetDetailsIndex"
+			],
+			[
+				"mic",
+				"micTesterString"
+			],
+			[
+				"singing",
+				"singing_order_number"
+			],
+			[
+				"singing_or",
+				"singing_order_number"
+			],
+			[
+				"quar",
+				"quartetDetailsIndex"
+			],
+			[
+				"quartet",
+				"quartet_members"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"repeat",
+				"repeat-x"
+			],
+			[
+				"rep",
+				"repeat"
+			],
+			[
+				"scoreIn",
+				"scoreInPercentage"
+			],
+			[
+				"overall",
+				"overallScore"
+			],
+			[
+				"overal",
+				"overallScoreIndex"
+			],
+			[
+				"fred",
+				"fredScoreMax"
+			],
+			[
+				"final",
+				"finalsScoreIndex"
+			],
+			[
+				"quarter",
+				"quarterfinalsScoreIndex"
+			],
+			[
+				"semif",
+				"semifinalsScoreIndex"
+			],
+			[
+				"semifin",
+				"semifinalsIndex"
+			],
+			[
+				"en",
+				"encodedSingingGroup"
+			],
+			[
+				"semi",
+				"semifinalsIndex"
+			],
+			[
+				"eve",
+				"eventList"
+			],
+			[
+				"semifinal",
+				"semifinalsScoreIndex"
+			],
+			[
+				"list",
+				"list_of_performers"
+			],
+			[
+				"perforer",
+				"performer_label_template"
+			],
+			[
+				"number",
+				"numberOfPerformers"
+			],
+			[
+				"numbe",
+				"numberOfPerformers"
+			],
+			[
+				"performance",
+				"performanceIndex"
+			],
+			[
+				"previous",
+				"previous_performance_button"
+			],
+			[
+				"previous_",
+				"previous_performance_template"
+			],
+			[
+				"performance_button",
+				"performance_button_template"
+			],
+			[
+				"te",
+				"text-align"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/sarah/Development/ux class/class-site/_config.yml",
+			"settings":
+			{
+				"buffer_size": 630,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/sarah/Development/barbershop/www/js/barbershop_song_titles.js",
+		"/Users/sarah/Development/barbershop/www/js/initialData.js",
+		"/Users/sarah/Development/barbershop/platforms/android/AndroidManifest.xml",
+		"/Users/sarah/Development/barbershop/config.xml",
+		"/Users/sarah/Development/barbershop/sign and build instructions.txt",
+		"/Users/sarah/Development/barbershop/www/js/common.js",
+		"/Users/sarah/Development/barbershop/www/js/index.js",
+		"/Users/sarah/Development/barbershop/www/js/settings.js",
+		"/Users/sarah/Development/barbershop/www/js/scores.js",
+		"/Users/sarah/Development/barbershop/www/css/layout_styles.css",
+		"/Users/sarah/Development/barbershop/www/settings.html",
+		"/Users/sarah/Development/barbershop/www/index.html",
+		"/Users/sarah/Development/barbershop/www/event.html",
+		"/Users/sarah/Development/barbershop/www/js/singing_group_names.js",
+		"/Users/sarah/Development/barbershop/www/js/about.js",
+		"/Users/sarah/Development/barbershop/www/js/performance.js",
+		"/Users/sarah/Development/barbershop/www/js/event.js",
+		"/Users/sarah/Development/barbershop/www/js/menu_bar.js",
+		"/Users/sarah/Development/barbershop/www/thanks.html",
+		"/Users/sarah/Development/barbershop/www/css/colors.css",
+		"/Users/sarah/Development/barbershop/www/js/singing_order.js",
+		"/Users/sarah/Development/barbershop/www/performance.html",
+		"/Users/sarah/Development/ux class/class-site/index.html",
+		"/Users/sarah/Development/barbershop/www/singing_order.html",
+		"/Users/sarah/Development/barbershop/www/scores.html",
+		"/Users/sarah/Development/barbershop/2014 data backup.txt",
+		"/Users/sarah/ScoreCat-debug (good?)/assets/www/js/menu_bar.js",
+		"/Users/sarah/ScoreCat-debug (good?)/assets/www/js/common.js",
+		"/Users/sarah/ScoreCat-debug (good?)/assets/www/js/index.js",
+		"/Users/sarah/Development/barbershop backup 2015-06-18/www/js/scores.js",
+		"/Users/sarah/Development/barbershop/www/js/data 2015 temp.js",
+		"/Users/sarah/Development/ux class/class-site/_posts/2015-03-16-five-things-i-learned-from-tracking-my-time.markdown",
+		"/Users/sarah/Development/ux class/class-site/default-blog-post.markdown",
+		"/Users/sarah/Development/ux class/class-site/style/mobilenavigation.css",
+		"/Users/sarah/Development/ux class/class-site/faq/index.html",
+		"/Users/sarah/Development/ux class/class-site/_config.yml",
+		"/Users/sarah/Development/ux class/class-site/style/style.css",
+		"/Users/sarah/Development/ux class/class-site/style/stylemobile.css",
+		"/Users/sarah/Development/ux class/class-site/_layouts/landing-default.html",
+		"/Users/sarah/Development/ux class/class-site/_layouts/default.html",
+		"/Users/sarah/Development/ux class/class-site/sitemap.xml",
+		"/Users/sarah/Development/ux class/class-site/_includes/header.html",
+		"/Users/sarah/Development/ux class/class-site/_includes/footer.html",
+		"/Users/sarah/Development/ux class/class-site/_posts/2015-03-16-why-youre-missing-out-if-you-aren't-tracking-your-time.markdown",
+		"/Users/sarah/Development/ux class/class-site/.gitignore",
+		"/Users/sarah/Development/ux class/class-site/_posts/2015-02-22-welcome-to-jekyll.markdown",
+		"/Users/sarah/Development/ux class/class-site/_config-dev.yml",
+		"/Users/sarah/Development/ux class/class-site/_posts/2015-03-10-illustrator-script-export-artboards-@2x.markdown",
+		"/Applications/Adobe Illustrator CC 2014/Presets.localized/en_US/Scripts/SaveArtboardsForDualRes.jsx",
+		"/Users/sarah/Development/ux class/class-site/_includes/head.html",
+		"/Users/sarah/Development/ux class/class-site/thanks/index.html",
+		"/Users/sarah/Development/ux class/class-site/about/index.html",
+		"/Users/sarah/Development/ux class/class-site/signup/index.html",
+		"/Users/sarah/Development/ux class/class-site/contact/index.html",
+		"/Users/sarah/Development/ux class/class-site/contact/contact.php",
+		"/Users/sarah/Development/ux class/class-site/blog/index.html",
+		"/Users/sarah/Development/ux class/class-site/_layouts/post.html",
+		"/Users/sarah/Development/ux class/class-site/downloads/SaveArtboardsForDualRes.jsx",
+		"/Users/sarah/Development/ux class/class-site/_posts/2015-02-23-ux-vs-ui-design.markdown",
+		"/Users/sarah/Development/ux class/class-site/_site/2015/02/23/ux-vs-ui-design.html",
+		"/Users/sarah/Development/ux class/class-site/_posts/2015-03-06-illustrator-export-with-@2x.markdown",
+		"/Users/sarah/Development/ux class/class-site/CNAME",
+		"/Users/sarah/Development/ux class/deploy instructions.txt",
+		"/Users/sarah/Development/ux class/stock resources/html/blue/index-slide.html",
+		"/Users/sarah/Development/ux class/class-site/_includes/about-sarah-sidebar.html",
+		"/Users/sarah/Development/ux class/class-site/contact/thanks.html",
+		"/Users/sarah/Development/ux class/class-site/_includes/scripts.html",
+		"/Users/sarah/Development/ux class/class-site/_posts/2015-02-23-welcome-to-jekyll-2.markdown",
+		"/Users/sarah/Development/ux class/class-site/style/Gemfile",
+		"/Users/sarah/Development/ux class/class-site/_layouts/untitled",
+		"/Users/sarah/Development/ux class/stock resources/html/green/about.html",
+		"/Users/sarah/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/sarah/Development/ux class/class-site/script/scripts.js",
+		"/Applications/Adobe Illustrator CC 2014/Presets.localized/en_US/Scripts/Export at dual res to :images.jsx",
+		"/Applications/Adobe Illustrator CC 2014/Presets.localized/en_US/Scripts/SaveIosAndDroid.jsx",
+		"/Applications/Adobe Illustrator CC 2014/Presets.localized/en_US/Scripts/SaveDocsAsPDF.jsx",
+		"/Users/sarah/Development/ux class/html/blue/newsdetail.html",
+		"/Users/sarah/Development/ux class/class-site/script/jquery.nav.js",
+		"/Users/sarah/Development/ux class/class-site/about/index-backup.html",
+		"/Users/sarah/Development/ux class/class-site/_site/about/index.html",
+		"/Users/sarah/Development/ux site/html/blue/portfolio.html",
+		"/Users/sarah/Development/ux class/html/blue/about.html",
+		"/Users/sarah/Development/ux site/html/blue/service.html",
+		"/Users/sarah/Development/ux class/html/blue/contact.html",
+		"/Users/sarah/Development/ux site/html/blue/index.html",
+		"/Users/sarah/Development/ux class/class-site/about.md",
+		"/Users/sarah/Development/ux site/html/blue/style/stylemobile.css",
+		"/Users/sarah/Development/ux site/html/blue/script/scripts.js",
+		"/Users/sarah/Development/ux class/class-site/_layouts/post-backup.html",
+		"/Users/sarah/Development/ux class/class-site/css/main.scss",
+		"/Users/sarah/Development/barbershop/platforms/android/ant.properties",
+		"/Users/sarah/Development/barbershop/www/js/song_titles_2.js",
+		"/Users/sarah/Development/barbershop/www/settings2.html",
+		"/Users/sarah/Development/barbershop/www/css/night_colors.css",
+		"/Users/sarah/Development/barbershop/www/css/light_theme.css",
+		"/Users/sarah/Development/barbershop/www/css/day_colors",
+		"/Users/sarah/Development/barbershop/www/css/dark_theme.css",
+		"/Users/sarah/Development/barbershop/www/js/performance2.js",
+		"/Users/sarah/Development/barbershop/www/css/layout_styles2.css",
+		"/Users/sarah/Development/barbershop/www/event2.html",
+		"/Users/sarah/Development/barbershop/www/singing_order2.html",
+		"/Users/sarah/Development/barbershop/www/index2.html",
+		"/Users/sarah/Development/barbershop/www/scores2.html",
+		"/Users/sarah/Development/barbershop/www/performance2.html",
+		"/Users/sarah/Development/barbershop/www/js/event2.js",
+		"/Users/sarah/Development/barbershop/www/js/performance2",
+		"/Users/sarah/Development/barbershop/www/untitled",
+		"/Users/sarah/Development/barbershop_old/www/js/barbershop_song_titles.js",
+		"/Users/sarah/Development/barbershop_old/www/js/jquery.ui.touch-punch.min.js",
+		"/Users/sarah/Development/barbershop/www/layout_styles.css",
+		"/Users/sarah/Development/barbershop/www/js/sarah.js",
+		"/Users/sarah/Development/barbershop/www/css/index.css",
+		"/Users/sarah/Development/barbershop/www/js/menu_bar",
+		"/Users/sarah/Development/barbershop/www/index_old.html",
+		"/Users/sarah/Development/barbershop/www/js/jquery.ui.touch-punch.min.js",
+		"/Users/sarah/Development/barbershop_old/www/index.html.old.html",
+		"/Users/sarah/Development/barbershop/www/index.html.old.html",
+		"/Users/sarah/Development/barbershop/platforms/android/assets/www/index_helloworld.html",
+		"/Users/sarah/Development/barbershop/platforms/android/assets/www/config.xml",
+		"/Users/sarah/Development/barbershop/platforms/android/assets/www/cordova.js",
+		"/Users/sarah/Development/barbershop/www/js/softkeyboard.js",
+		"/Users/sarah/Development/barbershop/plugins/org.apache.cordova.plugin.softkeyboard/src/android/org.apache.cordova.plugin.softkeyboard/SoftKeyboard.java",
+		"/Users/sarah/Development/barbershop/www/detail.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Finals",
+			"Throw",
+			"Round",
+			"Shoptim",
+			"Northwest Vocal",
+			"FlightLine",
+			"shoptim",
+			"FlightLine",
+			"Shoptimus",
+			"Frank the Dog",
+			"coldsnap",
+			">\n",
+			"Acoustix",
+			"Realtime (EVG) – 2005",
+			"Realtime (",
+			"Realtime (EVG) – 2005",
+			"Realtime",
+			"Realtime (EVG) – 2005",
+			"Realtime",
+			"showQuartetDetailsOnEventPage",
+			"singing_group_members",
+			"Realtime",
+			"frank the dog",
+			"frank the dof",
+			"settings_heading",
+			".heading",
+			";\n",
+			"settings",
+			"date heading",
+			"mailto",
+			"lockout",
+			"Frank the",
+			"Frank the Dog",
+			"1BSQ",
+			"mailto",
+			"next_per",
+			"border-radius:",
+			"delete_button",
+			"li.button a",
+			"1BSQ",
+			" champs",
+			"toggleBrightness()",
+			"brightness",
+			"daymode",
+			"onsole.log",
+			"console",
+			"console.",
+			"mailto",
+			"brightness",
+			"\"previous_performance_detail\"",
+			"previous_performance_detail",
+			"appName",
+			"Pittsburgh",
+			"2015",
+			"date",
+			"Tuesday",
+			"initialData",
+			"carter",
+			"NZABS",
+			"NZ",
+			"eventList",
+			"Northwest Vo",
+			"diag",
+			"full-homepage.gray",
+			"gray-image",
+			".full-homepage",
+			"full-home",
+			"white",
+			"/about/",
+			"full-width",
+			"caption",
+			"!important",
+			"gsc-search-button",
+			"blockquote",
+			"slideshow .panel-slides ",
+			"slidehshow .panel-slides ",
+			"slide",
+			"general-sub",
+			"image-service",
+			"webkit-appe",
+			"button-intro",
+			"mc",
+			"nav-main",
+			"intro",
+			"mc-embed",
+			"h6",
+			"alt=\"",
+			"missingidea",
+			"href=\"/",
+			"herf=\"/",
+			"src=\"/images",
+			".white",
+			"white-r",
+			"logo-text",
+			"nav-main li a",
+			".white",
+			"UXD for Engineers",
+			"UX Design for Engineers",
+			"nav-main li",
+			"image-service",
+			"idebar",
+			"a:visited",
+			"small",
+			"h3",
+			"static-page h3",
+			"form-cont",
+			"740",
+			"main-content",
+			"contact-container",
+			"contact",
+			"static-page p",
+			"iframe",
+			"contact-container",
+			"h3",
+			"folderName",
+			"onepage",
+			"wp-capt",
+			"h2",
+			"idebar .text-w",
+			"static-page p",
+			"script",
+			"style",
+			"images",
+			"hero-con",
+			"mc-embed",
+			"input",
+			"input.button",
+			"button"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"settings_heading heading",
+			"settings_heading",
+			"BSQ",
+			"",
+			"BHNZ",
+			"<a href=\"settings.html\" class=\"menu_item settings_button\">Options</a>",
+			"<body>",
+			"a data-ajax=\"false\" href",
+			"&color",
+			"&?color",
+			"?&color",
+			"newChorusTableRow",
+			"chorusScoreInPercentage",
+			"chorusTableRowTemplate",
+			"table_chorus_score",
+			"table_chorus_singing_group",
+			"chorusScoreIndex",
+			"chorusIndex2",
+			"chorusIndex1",
+			" chorusScoreList",
+			" • ",
+			"js/fastclick.js",
+			"day_container",
+			"\"date heading\"",
+			"",
+			"userData",
+			"localStorage.getItem(\"userData\")",
+			"},",
+			"previous"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/sarah/Development/ux class/class-site/_config.yml",
+					"settings":
+					{
+						"buffer_size": 630,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.498841718057,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"song",
+				"barbershop/www/js/barbershop_song_titles.js"
+			],
+			[
+				"event.html",
+				"barbershop/www/event.html"
+			],
+			[
+				"event.",
+				"barbershop/www/event.html"
+			],
+			[
+				"perform",
+				"barbershop/www/performance.html"
+			],
+			[
+				"colo",
+				"barbershop/www/css/colors.css"
+			],
+			[
+				"initi",
+				"barbershop/www/js/initialData.js"
+			],
+			[
+				"barbershopindex",
+				"barbershop/www/index.html"
+			],
+			[
+				"index",
+				"class-site/index.html"
+			],
+			[
+				"settings",
+				"barbershop/www/settings.html"
+			],
+			[
+				"singing",
+				"barbershop/www/js/singing_group_names.js"
+			],
+			[
+				"layou",
+				"barbershop/www/css/layout_styles.css"
+			],
+			[
+				"android",
+				"barbershop/platforms/android/AndroidManifest.xml"
+			],
+			[
+				"cofig",
+				"barbershop/config.xml"
+			],
+			[
+				"sco",
+				"barbershop/www/js/scores.js"
+			],
+			[
+				"about.js",
+				"barbershop/www/js/about.js"
+			],
+			[
+				"initial",
+				"barbershop/www/js/initialData.js"
+			],
+			[
+				"colors",
+				"barbershop/www/css/colors.css"
+			],
+			[
+				"thanks",
+				"barbershop/www/thanks.html"
+			],
+			[
+				"andro",
+				"barbershop/platforms/android/AndroidManifest.xml"
+			],
+			[
+				"config",
+				"barbershop/config.xml"
+			],
+			[
+				"init",
+				"barbershop/www/js/initialData.js"
+			],
+			[
+				"menu",
+				"barbershop/www/js/menu_bar.js"
+			],
+			[
+				"footer",
+				"_includes/footer.html"
+			],
+			[
+				"2015",
+				"_posts/2015-03-10-illustrator-script-export-artboards-@2x.markdown"
+			],
+			[
+				"mobile",
+				"style/mobilenavigation.css"
+			],
+			[
+				"header",
+				"_includes/header.html"
+			],
+			[
+				"sitemap",
+				"sitemap.xml"
+			],
+			[
+				"aboutinde",
+				"about/index.html"
+			],
+			[
+				"thanksind",
+				"thanks/index.html"
+			],
+			[
+				"aboutin",
+				"about/index.html"
+			],
+			[
+				"signupindex",
+				"signup/index.html"
+			],
+			[
+				"contactindex",
+				"contact/index.html"
+			],
+			[
+				"post",
+				"_layouts/post.html"
+			],
+			[
+				"head",
+				"_includes/head.html"
+			],
+			[
+				"gitig",
+				".gitignore"
+			],
+			[
+				"save",
+				"downloads/SaveArtboardsForDualRes.jsx"
+			],
+			[
+				"uxmark",
+				"_posts/2015-02-23-ux-vs-ui-design.markdown"
+			],
+			[
+				"ux",
+				"_site/2015/02/23/ux-vs-ui-design.html"
+			],
+			[
+				"conf",
+				"_config.yml"
+			],
+			[
+				"signup",
+				"signup/index.html"
+			],
+			[
+				"about/inde",
+				"about/index.html"
+			],
+			[
+				"conta",
+				"contact/index.html"
+			],
+			[
+				"default",
+				"_layouts/default.html"
+			],
+			[
+				"landi",
+				"_layouts/landing-default.html"
+			],
+			[
+				"aboutindex",
+				"about/index.html"
+			],
+			[
+				"blogindex",
+				"blog/index.html"
+			],
+			[
+				"lan",
+				"_layouts/landing-default.html"
+			],
+			[
+				"scripts",
+				"_includes/scripts.html"
+			],
+			[
+				"contactinde",
+				"contact/index.html"
+			],
+			[
+				"gitignore",
+				".gitignore"
+			],
+			[
+				"contact.",
+				"class-site/contact/contact.php"
+			],
+			[
+				"contact",
+				"class-site/contact/index.html"
+			],
+			[
+				"heder",
+				"class-site/_includes/header.html"
+			],
+			[
+				"post.html",
+				"class-site/_layouts/post.html"
+			],
+			[
+				"landing",
+				"class-site/_layouts/landing-default.html"
+			],
+			[
+				"sidebar",
+				"class-site/_includes/about-sarah-sidebar.html"
+			],
+			[
+				"greenabout",
+				"stock resources/html/green/about.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 233.0,
+	"status_bar_visible": true
+}

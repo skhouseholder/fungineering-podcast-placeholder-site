@@ -1,0 +1,168 @@
+<!doctype html>
+ 
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+
+	<meta name="format-detection" content="telephone=no" />
+
+	
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/jquery-ui.1.10.3.js"></script>
+	<!--script src="js/jquery.ui.touch-punch.min.js"></script-->
+	<script src="js/barbershop_song_titles.js"></script>
+	<script src="js/singing_group_names.js"></script>
+	<script src="js/initialData.js"></script>
+	<script src="js/common.js"></script>
+	
+	<script src="js/menu_bar.js"></script>
+	<script src="js/performance.js"></script>
+	
+	<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+	<!-- <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" /> -->
+
+<!-- 	<meta name="viewport" content="width=device-width, target-densitydpi=high-dpi" />
+
+
+ -->
+
+ 	<script>
+	updateColors();
+	</script>
+
+	<link rel="stylesheet" href="css/layout_styles.css" type="text/css">
+	<link rel="stylesheet" href="css/colors.css" type="text/css">
+	<link rel="stylesheet" href="css/light_theme.css" type="text/css">
+	<!-- // <script type="text/javascript" charset="utf-8" src="jquery-2.0.0.min.js"></script> -->
+
+	<link rel="stylesheet" href="css/jquery-ui-smoothness.css" />
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+
+	<!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700|Cabin:400,600,700|Flamenco|Carter+One' rel='stylesheet' type='text/css'> -->
+
+	
+	<!-- // <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> -->
+
+	<script type='application/javascript' src='js/fastclick.min.js'></script>
+	<!--script type="text/javascript">
+      window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+        heap.load("47566328");
+  </script-->
+
+      <script type="text/javascript">
+      window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+        heap.load("3639290455");
+  </script>
+	
+  </head>
+
+<body>
+
+	<div id="loading-overlay">
+	  <!-- <div id="loading-message-container">
+	    hello!
+	  </div> -->
+	</div>
+
+	<div class="menu_bar">
+		<a href="#" class="menu_item up_level_button"><span class="arrow">&#9664;</span> <span class="up_level_text"> ... </span></a><a href="scores.html" class="menu_item scores_button">Scores</a><a href="settings.html" class="menu_item settings_button">Options</a><!--div class="menu_item time">12:46</div-->
+	</div>
+	<div class="content">
+		<div class="performance_content">
+			<div class="performance_container">
+				<div class="performance_info_container">
+					<div class="performance_navigation_buttons">
+						<a class="previous_performance_button">Previous</a>
+						<a class="next_performance_button">Next</a>
+					</div>
+					<div class="performance_header heading">
+						<form class="singing_group_form hidden">
+							<input id="singing_group_text_box" class="singing_group_autocomplete" placeholder="Singing group" type="text"/>
+						</form>
+
+						<div class="singing_order_number"></div>
+						<div class="singing_group_name">Loading singing group...</div>
+						<div class="quartet_members"></div>
+						<div class="quartet_sources"></div>
+					</div>
+
+					<div class="songs_form">
+						<!-- <div class="ui-widget"> -->
+							<form class="song1" name="song_1_text_box">
+							<!-- <label for="song_1_text_box">Song 1:</label> -->
+								<input id="song_1_text_box" class="song_autocomplete song_input" songIndex="0" type="text" size="25" placeholder="Song title #1"/>
+								<input type="hidden" class="metadata" />
+								<input id="song_1_score_mus" class="bhs_score left" type="number" placeholder="MUS" />
+								<input id="song_1_score_pre" class="bhs_score" type="number" placeholder="PRS" />
+								<input id="song_1_score_sng" class="bhs_score right" type="number" placeholder="SNG" />
+								<!-- <input type="submit" id="song_1_submit_button" class="remember-song" value="OK" /> -->
+							</form>
+
+						<form class="song2" id="song_2_text_box_jump">
+							<!-- <label for="song_2_text_box">Song 2:</label> -->
+							<input id="song_2_text_box" class="song_autocomplete song_input" songIndex="1" type="text" size="25"  placeholder="Song title #2" />
+							<input type="hidden" class="metadata" />
+							<input id="song_2_score_mus" class="bhs_score left" type="number" placeholder="MUS" />
+							<input id="song_2_score_pre" class="bhs_score" type="number" placeholder="PRS" />
+							<input id="song_2_score_sng" class="bhs_score right" type="number" placeholder="SNG" />
+							<!-- <input type="submit" id="song_2_submit_button" class="remember-song" value="OK" /> -->
+						</form>
+						<form class="song_template song_x hidden" id="song_x_text_box_jump">
+							<input id="song_x_text_box" class="song_autocomplete" songIndex="x" type="text" size="25"  placeholder="Song title #x" />
+							<input type="hidden" class="metadata" />
+							<!-- <input id="song_x_score_mus" class="bhs_score left" type="number" placeholder="MUS" />
+							<input id="song_x_score_pre" class="bhs_score" type="number" placeholder="PRS" />
+							<input id="song_x_score_sng" class="bhs_score right" type="number" placeholder="SNG" /> -->
+						</form>
+					</div>
+					<div class="add_song_button button hidden">Add song</button>
+					<!-- if is_mic_tester or !is_scorable, have "add another song" button -->
+				</div>
+
+				<!-- if is_scorable, show scoring info hee -->
+				<div class="fred_score scores_form">
+					<!-- <label for="score">Score</label> -->
+					<input id="fred_score_text_box" type="number" size="7" placeholder="Score" />
+					<input type="hidden" class="metadata" />
+					<!-- <input type="submit" id="fred_score_submit_button" value="OK"> -->
+				</div>
+
+				<div class="notes_form" name="notes_textarea">
+					<form>
+						<textarea id="notes_textarea" rows="5" cols="42" placeholder="My notes"></textarea>
+						<input type="hidden" class="metadata" />	
+						<!-- <input type="submit" id="notes_submit_button" value="OK"> -->
+					</form>
+				</div>
+
+				<!-- previous performances not shown by default; is expandable -->
+				<div class="section_heading_previous_performances subheading">
+					Previous performances:
+				</div>
+
+				<ul class="previous_performances_by_this_singing_group">
+					<li class="previous_performance">
+						<div class="event_name previous_performance_detail"></div>
+						<div class="my_score fred_score previous_performance_detail"></div>
+						<ul class="songs previous_performance_detail">
+							<li class="song previous_performance_detail"></li>
+							<li class="song_score bhs_score previous_performance_detail"></li>	
+						</ul>
+						<div class="my_notes previous_performance_detail"></div>
+					</li>
+				</ul>
+
+				<div class="performance_navigation_buttons">
+					<a class="previous_performance_button">Previous</a>
+					<a class="next_performance_button">Next</a>
+				</div>
+				<div class="buffer_space_for_keyboard">&nbsp;</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="warning_bar 2014 hidden">
+		<div class="heading">Viewing <span class="warning-year">previous</span> contest data</div>
+	</div>
+</body>
+</html>

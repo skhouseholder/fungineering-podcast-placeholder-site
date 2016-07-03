@@ -1,0 +1,19 @@
+::-webkit-input-placeholder {
+   color: #ddd;
+   font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #ddd;  
+   font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #ddd;  
+   font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+}
+
+:-ms-input-placeholder {  
+   color: #ddd;  
+   font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+}

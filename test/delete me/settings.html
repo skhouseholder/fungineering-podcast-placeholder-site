@@ -1,0 +1,247 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+
+  	<script src="js/jquery-1.9.1.js"></script>
+  	<script src="js/jquery-ui.1.10.3.js"></script>
+  	<script src="js/menu_bar.js"></script>
+  	<script src="js/initialData.js"></script>
+  	<script src="js/common.js"></script>
+  	<script src="js/settings.js"></script>
+
+  	<script>
+	updateColors();
+	</script>
+
+	<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' * data: blob: filesystem:; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+
+
+	<link rel="stylesheet" href="css/layout_styles.css" type="text/css">
+	<link rel="stylesheet" class="color_mode" href="css/colors.css" type="text/css">
+	<link rel="stylesheet" href="css/light_theme.css" type="text/css">
+	<!--link rel="stylesheet" href="light_theme.css" type="text/css"-->
+	<link rel="stylesheet" href="css/jquery-ui-smoothness.css" />
+	<!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700|Cabin:400,600,700|Flamenco|Carter+One' rel='stylesheet' type='text/css'> -->
+
+	<script type='application/javascript' src='js/fastclick.min.js'></script>
+	<!--script type="text/javascript">
+      window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+        heap.load("47566328");
+  </script-->
+
+      <script type="text/javascript">
+      window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+        heap.load("3639290455");
+  </script>
+
+</head>
+
+<body>
+
+	<div id="loading-overlay">
+	  <!-- <div id="loading-message-container">
+	    hello!
+	  </div> -->
+	</div>
+	<div class="menu_bar">
+		<a href="#" class="menu_item up_level_button"><span class="arrow">&#9664;</span> <span class="up_level_text"> ... </span></a><a href="scores.html" class="menu_item scores_button">Scores</a><a href="settings.html" class="menu_item settings_button">Options</a><!--div class="menu_item time">12:46</div-->
+	</div>
+
+	<div class="content">
+		<div class="settings_content">
+			<div class="toggle_theme_button">Toggle brightness</div>
+			<div class="settings_container">
+				<!-- <div class="settings_heading heading">
+					Barbershop</span>
+				</div> -->
+				<ul class="list_of_buttons list_of_settings">
+					
+					<li class="setting_button choose_dark_colors_button button">
+						<a href="#">
+							<span>
+								Use dark colors
+							</span>
+							<div class="dark_color_explanation hidden">
+								TIP: If your keyboard is too bright against the dark color scheme, you can darken it in your device settings. (Android Lollipop and Marshmallow only.)
+							</div>
+							<div class="dark_color_explanation hidden">
+								Go to Settings &#187; Language and Input &#187; Google Keyboard &#187; Preferences &#187; Theme and set to "Material Dark."
+							</div>
+							<div class="set_dark_colors_button hidden">
+									Use dark colors
+							</div>
+						</a>
+					</li>
+
+					<li class="setting_button choose_light_colors_button button">
+						<a href="#">
+							<span>
+								Use light colors
+							</span>
+						</a>
+					</li>
+					<li class="setting_button button">
+						<a class="stop-prop" href="http://www.barbershop.org/nashville/schedule-of-events/">
+							<span>
+								View official schedule online
+							</span>
+						</a>
+					</li>
+					<li class="setting_button button">
+						<a class="stop-prop" href="http://www.harmonize.ws/harmonetreporter/scores/2016/scores16.htm">
+						<!-- <a class="stop-prop" href="http://www.barbershop.org/nashville/scores-and-results/"> -->
+							<span>
+								View official scores online
+							</span>
+						</a>
+					</li>
+					<li class="setting_button choose_scoring_method_button button">
+						<a href="#">
+							<span>
+								Select your scoring method
+							</span>
+							<div class="scoring_method_explanation hidden">
+								Simple scores – Choose a single-number rating for each performance. (Default)
+							</div>
+							<div class="scoring_method_explanation hidden">
+								BHS scores – Choose three numbers for each song: music, presentation, and singing.
+							</div>
+							<div class="set_scoring_method_button hidden">
+									Toggle scoring method
+							</div>
+						</a>
+					</li>
+					
+					<!-- <li class="setting_button set_quartet_details_button button">
+						<a href="#">
+							<span>
+								Toggle quartet member names
+							</span>
+						</a>
+					</li> -->
+					<div class="settings_heading heading previous_contest_years">
+						View your other contest data</span>
+					</div>
+					<li class="setting_button year_switcher_button button 2014">
+						<a href="#">
+							<span>
+								View your Las Vegas 2014 data
+							</span>
+						</a>
+					</li>
+					<li class="setting_button year_switcher_button button 2015">
+						<a href="#">
+							<span>
+								View your Pittsburgh 2015 data
+							</span>
+						</a>
+					</li>
+					<li class="setting_button year_switcher_button button 2016 current-year">
+						<a href="#">
+							<span>
+								View Nashville 2016 data
+							</span>
+						</a>
+					</li>
+
+
+					<div class="settings_heading heading">
+						Manage your data</span>
+					</div>
+					<li class="setting_button send_data_button button">
+						<a href="#">
+							<span>
+								Save backup file to device
+							</span>
+							<div class="send_data_button_warning hidden">
+								Save a backup file.
+							</div>
+							<a class="mailto_link hidden">
+								<span>
+									Save now
+								</span>
+							</a>
+						</a>
+					</li>
+					<li class="import_button setting_button button">
+						<a href="#">
+							<span>
+								Import a backup 
+							</span>
+							<div class="import_instructions hidden">
+								Copy all the data from the backup file or email and paste it into this box:
+							</div>
+							<form class="import_data_form hidden">
+								<textarea id="import_data_textarea" rows="5" cols="42" placeholder='{"quartetDetails":[{"name":"Reckless (BABS)","memberNames":"Andy Foster, Duncan Whinyates, Dale Kynaston, Andy Funnell","sources":"Telford, UK • West Midlands, UK","urls":["www.recklessquartet.co.uk","www.facebook.com/groups/467128526738639"]},{"name":"Mayhem (MAD)","memberNames":"Matthew Fellows, Pookie Dingle, Jr., Mike Pinto, Ken White","sources":"Alexandria, VA • Dundalk, MD • Frank Thorne • Hell’s Kitchen, NY • Ocean Co...'></textarea>
+								<div class="import_instructions hidden">
+									Warning! This will overwrite ALL existing user data!
+								</div>
+								
+								<div class="import_data_submit_button">
+									Import
+								</div>
+
+								<div class="undo_import_button hidden">
+									Undo
+								</div>
+							</form>
+						</a>
+					</li>
+					<li class="setting_button clear_data_button button">
+						<a href="#">
+							<span>
+								Delete all user data
+							</span>
+							<div class="delete_button_warning hidden">
+								Tap this button to delete ALL user data. This operation cannot be undone. You probably ought to export/backup your data before proceeding.
+							</div>
+							<div class="delete_button hidden">
+								Delete all data
+							</div>
+						</a>
+					</li>
+					<div class="settings_heading heading">
+						About Music Notes</span>
+					</div>
+					<li class="blog_button setting_button button">
+						<a class="stop-prop" href="http://barbershopmusicnotes.blogspot.com/">
+							<span>
+								Blog: Updates, bugs, and news
+							</span>
+						</a>
+					</li>
+					<li class="acknowledgement_button setting_button button">
+						<a href="thanks.html">
+							<span>
+								About the developer
+							</span>
+						</a>
+					</li>
+					<li class="setting_button button give_your_opinion_button">
+						<a class="feedback_mailto_link">
+							<span>
+								Contact Sarah
+							</span>
+						</a>
+					</li>
+					<li class="setting_button button report_bug_button">
+						<a class="report-bug-mailto-link" href="mailto:skhouseholder@gmail.com?subject=I%20found%20a%20bug">
+							<span>
+								Report a bug
+							</span>
+						</a>
+					</li>
+				</ul>
+				Version <span class="app-version">[version number]</span> updated 7/1/2016
+			</div>
+		</div>
+	</div>
+	<div class="warning_bar hidden">
+		<div class="heading">Viewing <span class="warning-year">previous</span> contest data</div>
+	</div>
+	<script type="text/javascript" src="cordova.js"></script>
+</body>
+
+</html>
