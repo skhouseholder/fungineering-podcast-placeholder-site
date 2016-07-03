@@ -3,7 +3,7 @@ $( document ).ready(function() {
 	window.isphone = false;
     if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/)) {
         // document.addEventListener("deviceready", onDeviceReady, false);
-        window.isphone = true;
+        window.isphone = false;
     };
 
 	updateAppData();
