@@ -243,6 +243,7 @@ a:hover {
 .content img {
 	height: auto;
 	max-width: 100%;
+	max-height: 40px;
 }
 
 .no-js #timer,
@@ -299,8 +300,12 @@ p {
 .main-content {
 	font-size: 20px;
 	letter-spacing: 1px;
-	margin: 32px 0;
+	margin: 24px 0 32px;
 	text-align: center;
+}
+
+.main-content {
+	margin: 42px 0 24px;
 }
 
 .subtitle {
@@ -371,7 +376,9 @@ textarea:focus {
 
 button,
 input[type="submit"] {
-	background: #FF9800;
+	/*background: #FF9800;*/
+	background: #ffdb00;
+	color: #0055b3;
 	-webkit-transition:	all 0.2s;
 	-moz-transition:	all 0.2s;
 	transition:			all 0.2s;
