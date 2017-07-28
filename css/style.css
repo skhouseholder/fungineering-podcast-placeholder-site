@@ -118,7 +118,7 @@ body {
 }
 
 body {
-	color: #dadada;
+	color: #fff;
 	background-color: #0055b3;
 	line-height: 1.75;
 	margin: 0;
@@ -151,14 +151,15 @@ ol {
 }
 
 a {
-	color: #dadada;
-	text-decoration: underline;
+	color: #ffdb00;
+	text-decoration: none;
 }
 
 a:active,
 a:focus,
 a:hover {
 	outline: 0;
+	color: #FFA726;
 }
 
 a:hover {
@@ -244,6 +245,10 @@ a:hover {
 	height: auto;
 	max-width: 100%;
 	max-height: 40px;
+}
+
+.content img:hover {
+	box-shadow: 0px 0px 37px 5px rgba(255,255,255,.5);
 }
 
 .no-js #timer,
